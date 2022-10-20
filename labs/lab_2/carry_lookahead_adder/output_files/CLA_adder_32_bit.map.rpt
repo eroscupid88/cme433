@@ -1,0 +1,436 @@
+Analysis & Synthesis report for CLA_adder_32_bit
+Thu Oct  6 17:23:50 2022
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Port Connectivity Checks: "CLA_adder_4_bit:adder8"
+ 10. Port Connectivity Checks: "CLA_adder_4_bit:adder7"
+ 11. Port Connectivity Checks: "CLA_adder_4_bit:adder6"
+ 12. Port Connectivity Checks: "CLA_adder_4_bit:adder5"
+ 13. Port Connectivity Checks: "CLA_adder_4_bit:adder4"
+ 14. Port Connectivity Checks: "CLA_adder_4_bit:adder3"
+ 15. Port Connectivity Checks: "CLA_adder_4_bit:adder2"
+ 16. Port Connectivity Checks: "CLA_adder_4_bit:adder1"
+ 17. Post-Synthesis Netlist Statistics for Top Partition
+ 18. Elapsed Time Per Partition
+ 19. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu Oct  6 17:23:50 2022           ;
+; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Standard Edition ;
+; Revision Name                      ; CLA_adder_32_bit                                ;
+; Top-level Entity Name              ; CLA_adder_32_bit                                ;
+; Family                             ; Cyclone IV E                                    ;
+; Total logic elements               ; 160                                             ;
+;     Total combinational functions  ; 160                                             ;
+;     Dedicated logic registers      ; 94                                              ;
+; Total registers                    ; 94                                              ;
+; Total pins                         ; 101                                             ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EP4CE115F29C7      ;                    ;
+; Top-level entity name                                            ; CLA_adder_32_bit   ; CLA_adder_32_bit   ;
+; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 8           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 8           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-8         ;   0.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                    ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                      ; Library ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------+---------+
+; CLA_adder_32_bit.v               ; yes             ; User Verilog HDL File  ; /home/dtv782/engr-ece/CME 433/labs/lab_2/carry_lookahead_adder/CLA_adder_32_bit.v ;         ;
+; CLA_adder_4_bit.v                ; yes             ; User Verilog HDL File  ; /home/dtv782/engr-ece/CME 433/labs/lab_2/carry_lookahead_adder/CLA_adder_4_bit.v  ;         ;
+; CLA_adder.v                      ; yes             ; User Verilog HDL File  ; /home/dtv782/engr-ece/CME 433/labs/lab_2/carry_lookahead_adder/CLA_adder.v        ;         ;
+; CLA_8_bit.v                      ; yes             ; User Verilog HDL File  ; /home/dtv782/engr-ece/CME 433/labs/lab_2/carry_lookahead_adder/CLA_8_bit.v        ;         ;
+; CLA.v                            ; yes             ; User Verilog HDL File  ; /home/dtv782/engr-ece/CME 433/labs/lab_2/carry_lookahead_adder/CLA.v              ;         ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 160       ;
+;                                             ;           ;
+; Total combinational functions               ; 160       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 62        ;
+;     -- 3 input functions                    ; 30        ;
+;     -- <=2 input functions                  ; 68        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 160       ;
+;     -- arithmetic mode                      ; 0         ;
+;                                             ;           ;
+; Total registers                             ; 94        ;
+;     -- Dedicated logic registers            ; 94        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 101       ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 94        ;
+; Total fan-out                               ; 798       ;
+; Average fan-out                             ; 1.75      ;
++---------------------------------------------+-----------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                  ;
++-----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------+------------------+--------------+
+; Compilation Hierarchy Node  ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                       ; Entity Name      ; Library Name ;
++-----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------+------------------+--------------+
+; |CLA_adder_32_bit           ; 160 (0)             ; 94 (0)                    ; 0           ; 0            ; 0       ; 0         ; 101  ; 0            ; |CLA_adder_32_bit                                         ; CLA_adder_32_bit ; work         ;
+;    |CLA_8_bit:CLA_module|   ; 22 (22)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_8_bit:CLA_module                    ; CLA_8_bit        ; work         ;
+;    |CLA_adder_4_bit:adder1| ; 19 (0)              ; 12 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder1                  ; CLA_adder_4_bit  ; work         ;
+;       |CLA:cla_module|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder1|CLA:cla_module   ; CLA              ; work         ;
+;       |CLA_adder:adder1|    ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder1|CLA_adder:adder1 ; CLA_adder        ; work         ;
+;       |CLA_adder:adder2|    ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder1|CLA_adder:adder2 ; CLA_adder        ; work         ;
+;       |CLA_adder:adder3|    ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder1|CLA_adder:adder3 ; CLA_adder        ; work         ;
+;       |CLA_adder:adder4|    ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder1|CLA_adder:adder4 ; CLA_adder        ; work         ;
+;    |CLA_adder_4_bit:adder2| ; 17 (0)              ; 12 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder2                  ; CLA_adder_4_bit  ; work         ;
+;       |CLA:cla_module|      ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder2|CLA:cla_module   ; CLA              ; work         ;
+;       |CLA_adder:adder1|    ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder2|CLA_adder:adder1 ; CLA_adder        ; work         ;
+;       |CLA_adder:adder2|    ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder2|CLA_adder:adder2 ; CLA_adder        ; work         ;
+;       |CLA_adder:adder3|    ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder2|CLA_adder:adder3 ; CLA_adder        ; work         ;
+;       |CLA_adder:adder4|    ; 4 (4)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder2|CLA_adder:adder4 ; CLA_adder        ; work         ;
+;    |CLA_adder_4_bit:adder3| ; 17 (0)              ; 12 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder3                  ; CLA_adder_4_bit  ; work         ;
+;       |CLA:cla_module|      ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder3|CLA:cla_module   ; CLA              ; work         ;
+;       |CLA_adder:adder1|    ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder3|CLA_adder:adder1 ; CLA_adder        ; work         ;
+;       |CLA_adder:adder2|    ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder3|CLA_adder:adder2 ; CLA_adder        ; work         ;
+;       |CLA_adder:adder3|    ; 4 (4)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder3|CLA_adder:adder3 ; CLA_adder        ; work         ;
+;       |CLA_adder:adder4|    ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder3|CLA_adder:adder4 ; CLA_adder        ; work         ;
+;    |CLA_adder_4_bit:adder4| ; 17 (0)              ; 12 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder4                  ; CLA_adder_4_bit  ; work         ;
+;       |CLA:cla_module|      ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder4|CLA:cla_module   ; CLA              ; work         ;
+;       |CLA_adder:adder1|    ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder4|CLA_adder:adder1 ; CLA_adder        ; work         ;
+;       |CLA_adder:adder2|    ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder4|CLA_adder:adder2 ; CLA_adder        ; work         ;
+;       |CLA_adder:adder3|    ; 4 (4)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder4|CLA_adder:adder3 ; CLA_adder        ; work         ;
+;       |CLA_adder:adder4|    ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder4|CLA_adder:adder4 ; CLA_adder        ; work         ;
+;    |CLA_adder_4_bit:adder5| ; 17 (0)              ; 12 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder5                  ; CLA_adder_4_bit  ; work         ;
+;       |CLA:cla_module|      ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder5|CLA:cla_module   ; CLA              ; work         ;
+;       |CLA_adder:adder1|    ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder5|CLA_adder:adder1 ; CLA_adder        ; work         ;
+;       |CLA_adder:adder2|    ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder5|CLA_adder:adder2 ; CLA_adder        ; work         ;
+;       |CLA_adder:adder3|    ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder5|CLA_adder:adder3 ; CLA_adder        ; work         ;
+;       |CLA_adder:adder4|    ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder5|CLA_adder:adder4 ; CLA_adder        ; work         ;
+;    |CLA_adder_4_bit:adder6| ; 18 (0)              ; 12 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder6                  ; CLA_adder_4_bit  ; work         ;
+;       |CLA:cla_module|      ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder6|CLA:cla_module   ; CLA              ; work         ;
+;       |CLA_adder:adder1|    ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder6|CLA_adder:adder1 ; CLA_adder        ; work         ;
+;       |CLA_adder:adder2|    ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder6|CLA_adder:adder2 ; CLA_adder        ; work         ;
+;       |CLA_adder:adder3|    ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder6|CLA_adder:adder3 ; CLA_adder        ; work         ;
+;       |CLA_adder:adder4|    ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder6|CLA_adder:adder4 ; CLA_adder        ; work         ;
+;    |CLA_adder_4_bit:adder7| ; 19 (0)              ; 12 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder7                  ; CLA_adder_4_bit  ; work         ;
+;       |CLA:cla_module|      ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder7|CLA:cla_module   ; CLA              ; work         ;
+;       |CLA_adder:adder1|    ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder7|CLA_adder:adder1 ; CLA_adder        ; work         ;
+;       |CLA_adder:adder2|    ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder7|CLA_adder:adder2 ; CLA_adder        ; work         ;
+;       |CLA_adder:adder3|    ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder7|CLA_adder:adder3 ; CLA_adder        ; work         ;
+;       |CLA_adder:adder4|    ; 4 (4)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder7|CLA_adder:adder4 ; CLA_adder        ; work         ;
+;    |CLA_adder_4_bit:adder8| ; 14 (0)              ; 10 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder8                  ; CLA_adder_4_bit  ; work         ;
+;       |CLA:cla_module|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder8|CLA:cla_module   ; CLA              ; work         ;
+;       |CLA_adder:adder1|    ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder8|CLA_adder:adder1 ; CLA_adder        ; work         ;
+;       |CLA_adder:adder2|    ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder8|CLA_adder:adder2 ; CLA_adder        ; work         ;
+;       |CLA_adder:adder3|    ; 5 (5)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder8|CLA_adder:adder3 ; CLA_adder        ; work         ;
+;       |CLA_adder:adder4|    ; 2 (2)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CLA_adder_32_bit|CLA_adder_4_bit:adder8|CLA_adder:adder4 ; CLA_adder        ; work         ;
++-----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------+------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 94    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CLA_adder_4_bit:adder8"                                                                                   ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                  ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; C_out ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CLA_adder_4_bit:adder7"                                                                                   ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                  ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; C_out ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CLA_adder_4_bit:adder6"                                                                                   ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                  ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; C_out ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CLA_adder_4_bit:adder5"                                                                                   ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                  ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; C_out ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CLA_adder_4_bit:adder4"                                                                                   ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                  ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; C_out ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CLA_adder_4_bit:adder3"                                                                                   ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                  ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; C_out ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CLA_adder_4_bit:adder2"                                                                                   ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                  ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; C_out ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CLA_adder_4_bit:adder1"                                                                                   ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                  ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; C_out ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 101                         ;
+; cycloneiii_ff         ; 94                          ;
+;     plain             ; 94                          ;
+; cycloneiii_lcell_comb ; 160                         ;
+;     normal            ; 160                         ;
+;         2 data inputs ; 68                          ;
+;         3 data inputs ; 30                          ;
+;         4 data inputs ; 62                          ;
+;                       ;                             ;
+; Max LUT depth         ; 9.00                        ;
+; Average LUT depth     ; 3.95                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Standard Edition
+    Info: Processing started: Thu Oct  6 17:23:45 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CLA_adder_32_bit -c CLA_adder_32_bit
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file CLA_adder_32_bit.v
+    Info (12023): Found entity 1: CLA_adder_32_bit File: /home/dtv782/engr-ece/CME 433/labs/lab_2/carry_lookahead_adder/CLA_adder_32_bit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file CLA_adder_16_bit.v
+    Info (12023): Found entity 1: CLA_adder_16_bit File: /home/dtv782/engr-ece/CME 433/labs/lab_2/carry_lookahead_adder/CLA_adder_16_bit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file CLA_adder_4_bit.v
+    Info (12023): Found entity 1: CLA_adder_4_bit File: /home/dtv782/engr-ece/CME 433/labs/lab_2/carry_lookahead_adder/CLA_adder_4_bit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file CLA_adder.v
+    Info (12023): Found entity 1: CLA_adder File: /home/dtv782/engr-ece/CME 433/labs/lab_2/carry_lookahead_adder/CLA_adder.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file CLA_8_bit.v
+    Info (12023): Found entity 1: CLA_8_bit File: /home/dtv782/engr-ece/CME 433/labs/lab_2/carry_lookahead_adder/CLA_8_bit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file CLA.v
+    Info (12023): Found entity 1: CLA File: /home/dtv782/engr-ece/CME 433/labs/lab_2/carry_lookahead_adder/CLA.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at CLA_adder_16_bit.v(11): created implicit net for "q" File: /home/dtv782/engr-ece/CME 433/labs/lab_2/carry_lookahead_adder/CLA_adder_16_bit.v Line: 11
+Info (12127): Elaborating entity "CLA_adder_32_bit" for the top level hierarchy
+Info (12128): Elaborating entity "CLA_8_bit" for hierarchy "CLA_8_bit:CLA_module" File: /home/dtv782/engr-ece/CME 433/labs/lab_2/carry_lookahead_adder/CLA_adder_32_bit.v Line: 11
+Info (12128): Elaborating entity "CLA_adder_4_bit" for hierarchy "CLA_adder_4_bit:adder1" File: /home/dtv782/engr-ece/CME 433/labs/lab_2/carry_lookahead_adder/CLA_adder_32_bit.v Line: 13
+Info (12128): Elaborating entity "CLA" for hierarchy "CLA_adder_4_bit:adder1|CLA:cla_module" File: /home/dtv782/engr-ece/CME 433/labs/lab_2/carry_lookahead_adder/CLA_adder_4_bit.v Line: 11
+Info (12128): Elaborating entity "CLA_adder" for hierarchy "CLA_adder_4_bit:adder1|CLA_adder:adder1" File: /home/dtv782/engr-ece/CME 433/labs/lab_2/carry_lookahead_adder/CLA_adder_4_bit.v Line: 13
+Warning (12241): 8 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 273 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 66 input pins
+    Info (21059): Implemented 35 output pins
+    Info (21061): Implemented 172 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 751 megabytes
+    Info: Processing ended: Thu Oct  6 17:23:50 2022
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:15
+
+

@@ -1,0 +1,1084 @@
+|CLA_adder_32_bit
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+a[8] => a[8].IN1
+a[9] => a[9].IN1
+a[10] => a[10].IN1
+a[11] => a[11].IN1
+a[12] => a[12].IN1
+a[13] => a[13].IN1
+a[14] => a[14].IN1
+a[15] => a[15].IN1
+a[16] => a[16].IN1
+a[17] => a[17].IN1
+a[18] => a[18].IN1
+a[19] => a[19].IN1
+a[20] => a[20].IN1
+a[21] => a[21].IN1
+a[22] => a[22].IN1
+a[23] => a[23].IN1
+a[24] => a[24].IN1
+a[25] => a[25].IN1
+a[26] => a[26].IN1
+a[27] => a[27].IN1
+a[28] => a[28].IN1
+a[29] => a[29].IN1
+a[30] => a[30].IN1
+a[31] => a[31].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+b[8] => b[8].IN1
+b[9] => b[9].IN1
+b[10] => b[10].IN1
+b[11] => b[11].IN1
+b[12] => b[12].IN1
+b[13] => b[13].IN1
+b[14] => b[14].IN1
+b[15] => b[15].IN1
+b[16] => b[16].IN1
+b[17] => b[17].IN1
+b[18] => b[18].IN1
+b[19] => b[19].IN1
+b[20] => b[20].IN1
+b[21] => b[21].IN1
+b[22] => b[22].IN1
+b[23] => b[23].IN1
+b[24] => b[24].IN1
+b[25] => b[25].IN1
+b[26] => b[26].IN1
+b[27] => b[27].IN1
+b[28] => b[28].IN1
+b[29] => b[29].IN1
+b[30] => b[30].IN1
+b[31] => b[31].IN1
+C0 => C0.IN2
+clk => clk.IN8
+s[0] <= CLA_adder_4_bit:adder1.port4
+s[1] <= CLA_adder_4_bit:adder1.port4
+s[2] <= CLA_adder_4_bit:adder1.port4
+s[3] <= CLA_adder_4_bit:adder1.port4
+s[4] <= CLA_adder_4_bit:adder2.port4
+s[5] <= CLA_adder_4_bit:adder2.port4
+s[6] <= CLA_adder_4_bit:adder2.port4
+s[7] <= CLA_adder_4_bit:adder2.port4
+s[8] <= CLA_adder_4_bit:adder3.port4
+s[9] <= CLA_adder_4_bit:adder3.port4
+s[10] <= CLA_adder_4_bit:adder3.port4
+s[11] <= CLA_adder_4_bit:adder3.port4
+s[12] <= CLA_adder_4_bit:adder4.port4
+s[13] <= CLA_adder_4_bit:adder4.port4
+s[14] <= CLA_adder_4_bit:adder4.port4
+s[15] <= CLA_adder_4_bit:adder4.port4
+s[16] <= CLA_adder_4_bit:adder5.port4
+s[17] <= CLA_adder_4_bit:adder5.port4
+s[18] <= CLA_adder_4_bit:adder5.port4
+s[19] <= CLA_adder_4_bit:adder5.port4
+s[20] <= CLA_adder_4_bit:adder6.port4
+s[21] <= CLA_adder_4_bit:adder6.port4
+s[22] <= CLA_adder_4_bit:adder6.port4
+s[23] <= CLA_adder_4_bit:adder6.port4
+s[24] <= CLA_adder_4_bit:adder7.port4
+s[25] <= CLA_adder_4_bit:adder7.port4
+s[26] <= CLA_adder_4_bit:adder7.port4
+s[27] <= CLA_adder_4_bit:adder7.port4
+s[28] <= CLA_adder_4_bit:adder8.port4
+s[29] <= CLA_adder_4_bit:adder8.port4
+s[30] <= CLA_adder_4_bit:adder8.port4
+s[31] <= CLA_adder_4_bit:adder8.port4
+Cout <= CLA_8_bit:CLA_module.port4
+G <= CLA_8_bit:CLA_module.port5
+P <= CLA_8_bit:CLA_module.port6
+
+
+|CLA_adder_32_bit|CLA_8_bit:CLA_module
+C0 => C_out.IN0
+C0 => C_out.IN1
+C0 => C_out.IN1
+C0 => C_out.IN1
+C0 => C_out.IN1
+C0 => C_out.IN1
+C0 => C_out.IN1
+C0 => Cout.IN1
+p[0] => C_out.IN1
+p[0] => C_out.IN0
+p[0] => C_out.IN1
+p[0] => C_out.IN1
+p[0] => C_out.IN1
+p[0] => P_wire.IN1
+p[1] => C_out.IN0
+p[1] => C_out.IN1
+p[1] => C_out.IN0
+p[1] => C_out.IN1
+p[1] => C_out.IN1
+p[1] => C_out.IN1
+p[1] => C_out.IN1
+p[2] => C_out.IN0
+p[2] => C_out.IN1
+p[2] => C_out.IN0
+p[2] => C_out.IN1
+p[2] => C_out.IN1
+p[2] => C_out.IN1
+p[3] => C_out.IN0
+p[3] => C_out.IN1
+p[3] => C_out.IN0
+p[3] => C_out.IN1
+p[3] => C_out.IN1
+p[4] => C_out.IN0
+p[4] => C_out.IN1
+p[4] => C_out.IN0
+p[4] => C_out.IN1
+p[5] => C_out.IN0
+p[5] => C_out.IN1
+p[5] => C_out.IN0
+p[6] => C_out.IN0
+p[6] => C_out.IN1
+p[7] => ~NO_FANOUT~
+g[0] => C_out.IN1
+g[0] => C_out.IN1
+g[0] => C_out.IN1
+g[0] => C_out.IN1
+g[0] => C_out.IN1
+g[0] => C_out.IN1
+g[0] => C_out.IN1
+g[1] => C_out.IN1
+g[1] => C_out.IN1
+g[1] => C_out.IN1
+g[1] => C_out.IN1
+g[1] => C_out.IN1
+g[1] => C_out.IN1
+g[2] => C_out.IN1
+g[2] => C_out.IN1
+g[2] => C_out.IN1
+g[2] => C_out.IN1
+g[2] => C_out.IN1
+g[3] => C_out.IN1
+g[3] => C_out.IN1
+g[3] => C_out.IN1
+g[3] => C_out.IN1
+g[4] => C_out.IN1
+g[4] => C_out.IN1
+g[4] => C_out.IN1
+g[5] => C_out.IN1
+g[5] => C_out.IN1
+g[6] => C_out.IN1
+g[7] => ~NO_FANOUT~
+C_out[0] <= C_out.DB_MAX_OUTPUT_PORT_TYPE
+C_out[1] <= C_out.DB_MAX_OUTPUT_PORT_TYPE
+C_out[2] <= C_out.DB_MAX_OUTPUT_PORT_TYPE
+C_out[3] <= C_out.DB_MAX_OUTPUT_PORT_TYPE
+C_out[4] <= C_out.DB_MAX_OUTPUT_PORT_TYPE
+C_out[5] <= C_out.DB_MAX_OUTPUT_PORT_TYPE
+C_out[6] <= C_out.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+G <= C_out.DB_MAX_OUTPUT_PORT_TYPE
+P <= P_wire.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder1
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+C0 => C0.IN2
+clk => clk.IN4
+s[0] <= CLA_adder:adder1.port4
+s[1] <= CLA_adder:adder2.port4
+s[2] <= CLA_adder:adder3.port4
+s[3] <= CLA_adder:adder4.port4
+G <= CLA:cla_module.port5
+P <= CLA:cla_module.port6
+C_out <= CLA:cla_module.port4
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder1|CLA:cla_module
+C0 => C_out.IN0
+C0 => C_out.IN1
+C0 => C_out.IN1
+C0 => Cout.IN1
+p[0] => C_out.IN1
+p[0] => C_out.IN0
+p[0] => C_out.IN1
+p[0] => P_wire.IN1
+p[1] => C_out.IN0
+p[1] => C_out.IN1
+p[1] => C_out.IN0
+p[1] => P_wire.IN1
+p[2] => C_out.IN0
+p[2] => C_out.IN1
+p[2] => P_wire.IN0
+p[3] => P_wire.IN1
+p[3] => G_wire.IN0
+g[0] => C_out.IN1
+g[0] => C_out.IN1
+g[0] => C_out.IN1
+g[0] => G_wire.IN1
+g[1] => C_out.IN1
+g[1] => C_out.IN1
+g[1] => G_wire.IN1
+g[2] => C_out.IN1
+g[2] => G_wire.IN1
+g[3] => G_wire.IN1
+C_out[0] <= C_out.DB_MAX_OUTPUT_PORT_TYPE
+C_out[1] <= C_out.DB_MAX_OUTPUT_PORT_TYPE
+C_out[2] <= C_out.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+G <= G_wire.DB_MAX_OUTPUT_PORT_TYPE
+P <= P_wire.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder1|CLA_adder:adder1
+a => p.IN0
+a => g.IN0
+b => p.IN1
+b => g.IN1
+Cin => s.IN1
+clk => s~reg0.CLK
+clk => g~reg0.CLK
+clk => p~reg0.CLK
+s <= s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+p <= p~reg0.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder1|CLA_adder:adder2
+a => p.IN0
+a => g.IN0
+b => p.IN1
+b => g.IN1
+Cin => s.IN1
+clk => s~reg0.CLK
+clk => g~reg0.CLK
+clk => p~reg0.CLK
+s <= s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+p <= p~reg0.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder1|CLA_adder:adder3
+a => p.IN0
+a => g.IN0
+b => p.IN1
+b => g.IN1
+Cin => s.IN1
+clk => s~reg0.CLK
+clk => g~reg0.CLK
+clk => p~reg0.CLK
+s <= s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+p <= p~reg0.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder1|CLA_adder:adder4
+a => p.IN0
+a => g.IN0
+b => p.IN1
+b => g.IN1
+Cin => s.IN1
+clk => s~reg0.CLK
+clk => g~reg0.CLK
+clk => p~reg0.CLK
+s <= s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+p <= p~reg0.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder2
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+C0 => C0.IN2
+clk => clk.IN4
+s[0] <= CLA_adder:adder1.port4
+s[1] <= CLA_adder:adder2.port4
+s[2] <= CLA_adder:adder3.port4
+s[3] <= CLA_adder:adder4.port4
+G <= CLA:cla_module.port5
+P <= CLA:cla_module.port6
+C_out <= CLA:cla_module.port4
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder2|CLA:cla_module
+C0 => C_out.IN0
+C0 => C_out.IN1
+C0 => C_out.IN1
+C0 => Cout.IN1
+p[0] => C_out.IN1
+p[0] => C_out.IN0
+p[0] => C_out.IN1
+p[0] => P_wire.IN1
+p[1] => C_out.IN0
+p[1] => C_out.IN1
+p[1] => C_out.IN0
+p[1] => P_wire.IN1
+p[2] => C_out.IN0
+p[2] => C_out.IN1
+p[2] => P_wire.IN0
+p[3] => P_wire.IN1
+p[3] => G_wire.IN0
+g[0] => C_out.IN1
+g[0] => C_out.IN1
+g[0] => C_out.IN1
+g[0] => G_wire.IN1
+g[1] => C_out.IN1
+g[1] => C_out.IN1
+g[1] => G_wire.IN1
+g[2] => C_out.IN1
+g[2] => G_wire.IN1
+g[3] => G_wire.IN1
+C_out[0] <= C_out.DB_MAX_OUTPUT_PORT_TYPE
+C_out[1] <= C_out.DB_MAX_OUTPUT_PORT_TYPE
+C_out[2] <= C_out.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+G <= G_wire.DB_MAX_OUTPUT_PORT_TYPE
+P <= P_wire.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder2|CLA_adder:adder1
+a => p.IN0
+a => g.IN0
+b => p.IN1
+b => g.IN1
+Cin => s.IN1
+clk => s~reg0.CLK
+clk => g~reg0.CLK
+clk => p~reg0.CLK
+s <= s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+p <= p~reg0.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder2|CLA_adder:adder2
+a => p.IN0
+a => g.IN0
+b => p.IN1
+b => g.IN1
+Cin => s.IN1
+clk => s~reg0.CLK
+clk => g~reg0.CLK
+clk => p~reg0.CLK
+s <= s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+p <= p~reg0.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder2|CLA_adder:adder3
+a => p.IN0
+a => g.IN0
+b => p.IN1
+b => g.IN1
+Cin => s.IN1
+clk => s~reg0.CLK
+clk => g~reg0.CLK
+clk => p~reg0.CLK
+s <= s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+p <= p~reg0.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder2|CLA_adder:adder4
+a => p.IN0
+a => g.IN0
+b => p.IN1
+b => g.IN1
+Cin => s.IN1
+clk => s~reg0.CLK
+clk => g~reg0.CLK
+clk => p~reg0.CLK
+s <= s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+p <= p~reg0.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder3
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+C0 => C0.IN2
+clk => clk.IN4
+s[0] <= CLA_adder:adder1.port4
+s[1] <= CLA_adder:adder2.port4
+s[2] <= CLA_adder:adder3.port4
+s[3] <= CLA_adder:adder4.port4
+G <= CLA:cla_module.port5
+P <= CLA:cla_module.port6
+C_out <= CLA:cla_module.port4
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder3|CLA:cla_module
+C0 => C_out.IN0
+C0 => C_out.IN1
+C0 => C_out.IN1
+C0 => Cout.IN1
+p[0] => C_out.IN1
+p[0] => C_out.IN0
+p[0] => C_out.IN1
+p[0] => P_wire.IN1
+p[1] => C_out.IN0
+p[1] => C_out.IN1
+p[1] => C_out.IN0
+p[1] => P_wire.IN1
+p[2] => C_out.IN0
+p[2] => C_out.IN1
+p[2] => P_wire.IN0
+p[3] => P_wire.IN1
+p[3] => G_wire.IN0
+g[0] => C_out.IN1
+g[0] => C_out.IN1
+g[0] => C_out.IN1
+g[0] => G_wire.IN1
+g[1] => C_out.IN1
+g[1] => C_out.IN1
+g[1] => G_wire.IN1
+g[2] => C_out.IN1
+g[2] => G_wire.IN1
+g[3] => G_wire.IN1
+C_out[0] <= C_out.DB_MAX_OUTPUT_PORT_TYPE
+C_out[1] <= C_out.DB_MAX_OUTPUT_PORT_TYPE
+C_out[2] <= C_out.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+G <= G_wire.DB_MAX_OUTPUT_PORT_TYPE
+P <= P_wire.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder3|CLA_adder:adder1
+a => p.IN0
+a => g.IN0
+b => p.IN1
+b => g.IN1
+Cin => s.IN1
+clk => s~reg0.CLK
+clk => g~reg0.CLK
+clk => p~reg0.CLK
+s <= s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+p <= p~reg0.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder3|CLA_adder:adder2
+a => p.IN0
+a => g.IN0
+b => p.IN1
+b => g.IN1
+Cin => s.IN1
+clk => s~reg0.CLK
+clk => g~reg0.CLK
+clk => p~reg0.CLK
+s <= s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+p <= p~reg0.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder3|CLA_adder:adder3
+a => p.IN0
+a => g.IN0
+b => p.IN1
+b => g.IN1
+Cin => s.IN1
+clk => s~reg0.CLK
+clk => g~reg0.CLK
+clk => p~reg0.CLK
+s <= s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+p <= p~reg0.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder3|CLA_adder:adder4
+a => p.IN0
+a => g.IN0
+b => p.IN1
+b => g.IN1
+Cin => s.IN1
+clk => s~reg0.CLK
+clk => g~reg0.CLK
+clk => p~reg0.CLK
+s <= s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+p <= p~reg0.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder4
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+C0 => C0.IN2
+clk => clk.IN4
+s[0] <= CLA_adder:adder1.port4
+s[1] <= CLA_adder:adder2.port4
+s[2] <= CLA_adder:adder3.port4
+s[3] <= CLA_adder:adder4.port4
+G <= CLA:cla_module.port5
+P <= CLA:cla_module.port6
+C_out <= CLA:cla_module.port4
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder4|CLA:cla_module
+C0 => C_out.IN0
+C0 => C_out.IN1
+C0 => C_out.IN1
+C0 => Cout.IN1
+p[0] => C_out.IN1
+p[0] => C_out.IN0
+p[0] => C_out.IN1
+p[0] => P_wire.IN1
+p[1] => C_out.IN0
+p[1] => C_out.IN1
+p[1] => C_out.IN0
+p[1] => P_wire.IN1
+p[2] => C_out.IN0
+p[2] => C_out.IN1
+p[2] => P_wire.IN0
+p[3] => P_wire.IN1
+p[3] => G_wire.IN0
+g[0] => C_out.IN1
+g[0] => C_out.IN1
+g[0] => C_out.IN1
+g[0] => G_wire.IN1
+g[1] => C_out.IN1
+g[1] => C_out.IN1
+g[1] => G_wire.IN1
+g[2] => C_out.IN1
+g[2] => G_wire.IN1
+g[3] => G_wire.IN1
+C_out[0] <= C_out.DB_MAX_OUTPUT_PORT_TYPE
+C_out[1] <= C_out.DB_MAX_OUTPUT_PORT_TYPE
+C_out[2] <= C_out.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+G <= G_wire.DB_MAX_OUTPUT_PORT_TYPE
+P <= P_wire.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder4|CLA_adder:adder1
+a => p.IN0
+a => g.IN0
+b => p.IN1
+b => g.IN1
+Cin => s.IN1
+clk => s~reg0.CLK
+clk => g~reg0.CLK
+clk => p~reg0.CLK
+s <= s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+p <= p~reg0.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder4|CLA_adder:adder2
+a => p.IN0
+a => g.IN0
+b => p.IN1
+b => g.IN1
+Cin => s.IN1
+clk => s~reg0.CLK
+clk => g~reg0.CLK
+clk => p~reg0.CLK
+s <= s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+p <= p~reg0.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder4|CLA_adder:adder3
+a => p.IN0
+a => g.IN0
+b => p.IN1
+b => g.IN1
+Cin => s.IN1
+clk => s~reg0.CLK
+clk => g~reg0.CLK
+clk => p~reg0.CLK
+s <= s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+p <= p~reg0.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder4|CLA_adder:adder4
+a => p.IN0
+a => g.IN0
+b => p.IN1
+b => g.IN1
+Cin => s.IN1
+clk => s~reg0.CLK
+clk => g~reg0.CLK
+clk => p~reg0.CLK
+s <= s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+p <= p~reg0.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder5
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+C0 => C0.IN2
+clk => clk.IN4
+s[0] <= CLA_adder:adder1.port4
+s[1] <= CLA_adder:adder2.port4
+s[2] <= CLA_adder:adder3.port4
+s[3] <= CLA_adder:adder4.port4
+G <= CLA:cla_module.port5
+P <= CLA:cla_module.port6
+C_out <= CLA:cla_module.port4
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder5|CLA:cla_module
+C0 => C_out.IN0
+C0 => C_out.IN1
+C0 => C_out.IN1
+C0 => Cout.IN1
+p[0] => C_out.IN1
+p[0] => C_out.IN0
+p[0] => C_out.IN1
+p[0] => P_wire.IN1
+p[1] => C_out.IN0
+p[1] => C_out.IN1
+p[1] => C_out.IN0
+p[1] => P_wire.IN1
+p[2] => C_out.IN0
+p[2] => C_out.IN1
+p[2] => P_wire.IN0
+p[3] => P_wire.IN1
+p[3] => G_wire.IN0
+g[0] => C_out.IN1
+g[0] => C_out.IN1
+g[0] => C_out.IN1
+g[0] => G_wire.IN1
+g[1] => C_out.IN1
+g[1] => C_out.IN1
+g[1] => G_wire.IN1
+g[2] => C_out.IN1
+g[2] => G_wire.IN1
+g[3] => G_wire.IN1
+C_out[0] <= C_out.DB_MAX_OUTPUT_PORT_TYPE
+C_out[1] <= C_out.DB_MAX_OUTPUT_PORT_TYPE
+C_out[2] <= C_out.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+G <= G_wire.DB_MAX_OUTPUT_PORT_TYPE
+P <= P_wire.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder5|CLA_adder:adder1
+a => p.IN0
+a => g.IN0
+b => p.IN1
+b => g.IN1
+Cin => s.IN1
+clk => s~reg0.CLK
+clk => g~reg0.CLK
+clk => p~reg0.CLK
+s <= s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+p <= p~reg0.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder5|CLA_adder:adder2
+a => p.IN0
+a => g.IN0
+b => p.IN1
+b => g.IN1
+Cin => s.IN1
+clk => s~reg0.CLK
+clk => g~reg0.CLK
+clk => p~reg0.CLK
+s <= s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+p <= p~reg0.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder5|CLA_adder:adder3
+a => p.IN0
+a => g.IN0
+b => p.IN1
+b => g.IN1
+Cin => s.IN1
+clk => s~reg0.CLK
+clk => g~reg0.CLK
+clk => p~reg0.CLK
+s <= s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+p <= p~reg0.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder5|CLA_adder:adder4
+a => p.IN0
+a => g.IN0
+b => p.IN1
+b => g.IN1
+Cin => s.IN1
+clk => s~reg0.CLK
+clk => g~reg0.CLK
+clk => p~reg0.CLK
+s <= s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+p <= p~reg0.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder6
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+C0 => C0.IN2
+clk => clk.IN4
+s[0] <= CLA_adder:adder1.port4
+s[1] <= CLA_adder:adder2.port4
+s[2] <= CLA_adder:adder3.port4
+s[3] <= CLA_adder:adder4.port4
+G <= CLA:cla_module.port5
+P <= CLA:cla_module.port6
+C_out <= CLA:cla_module.port4
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder6|CLA:cla_module
+C0 => C_out.IN0
+C0 => C_out.IN1
+C0 => C_out.IN1
+C0 => Cout.IN1
+p[0] => C_out.IN1
+p[0] => C_out.IN0
+p[0] => C_out.IN1
+p[0] => P_wire.IN1
+p[1] => C_out.IN0
+p[1] => C_out.IN1
+p[1] => C_out.IN0
+p[1] => P_wire.IN1
+p[2] => C_out.IN0
+p[2] => C_out.IN1
+p[2] => P_wire.IN0
+p[3] => P_wire.IN1
+p[3] => G_wire.IN0
+g[0] => C_out.IN1
+g[0] => C_out.IN1
+g[0] => C_out.IN1
+g[0] => G_wire.IN1
+g[1] => C_out.IN1
+g[1] => C_out.IN1
+g[1] => G_wire.IN1
+g[2] => C_out.IN1
+g[2] => G_wire.IN1
+g[3] => G_wire.IN1
+C_out[0] <= C_out.DB_MAX_OUTPUT_PORT_TYPE
+C_out[1] <= C_out.DB_MAX_OUTPUT_PORT_TYPE
+C_out[2] <= C_out.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+G <= G_wire.DB_MAX_OUTPUT_PORT_TYPE
+P <= P_wire.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder6|CLA_adder:adder1
+a => p.IN0
+a => g.IN0
+b => p.IN1
+b => g.IN1
+Cin => s.IN1
+clk => s~reg0.CLK
+clk => g~reg0.CLK
+clk => p~reg0.CLK
+s <= s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+p <= p~reg0.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder6|CLA_adder:adder2
+a => p.IN0
+a => g.IN0
+b => p.IN1
+b => g.IN1
+Cin => s.IN1
+clk => s~reg0.CLK
+clk => g~reg0.CLK
+clk => p~reg0.CLK
+s <= s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+p <= p~reg0.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder6|CLA_adder:adder3
+a => p.IN0
+a => g.IN0
+b => p.IN1
+b => g.IN1
+Cin => s.IN1
+clk => s~reg0.CLK
+clk => g~reg0.CLK
+clk => p~reg0.CLK
+s <= s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+p <= p~reg0.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder6|CLA_adder:adder4
+a => p.IN0
+a => g.IN0
+b => p.IN1
+b => g.IN1
+Cin => s.IN1
+clk => s~reg0.CLK
+clk => g~reg0.CLK
+clk => p~reg0.CLK
+s <= s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+p <= p~reg0.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder7
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+C0 => C0.IN2
+clk => clk.IN4
+s[0] <= CLA_adder:adder1.port4
+s[1] <= CLA_adder:adder2.port4
+s[2] <= CLA_adder:adder3.port4
+s[3] <= CLA_adder:adder4.port4
+G <= CLA:cla_module.port5
+P <= CLA:cla_module.port6
+C_out <= CLA:cla_module.port4
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder7|CLA:cla_module
+C0 => C_out.IN0
+C0 => C_out.IN1
+C0 => C_out.IN1
+C0 => Cout.IN1
+p[0] => C_out.IN1
+p[0] => C_out.IN0
+p[0] => C_out.IN1
+p[0] => P_wire.IN1
+p[1] => C_out.IN0
+p[1] => C_out.IN1
+p[1] => C_out.IN0
+p[1] => P_wire.IN1
+p[2] => C_out.IN0
+p[2] => C_out.IN1
+p[2] => P_wire.IN0
+p[3] => P_wire.IN1
+p[3] => G_wire.IN0
+g[0] => C_out.IN1
+g[0] => C_out.IN1
+g[0] => C_out.IN1
+g[0] => G_wire.IN1
+g[1] => C_out.IN1
+g[1] => C_out.IN1
+g[1] => G_wire.IN1
+g[2] => C_out.IN1
+g[2] => G_wire.IN1
+g[3] => G_wire.IN1
+C_out[0] <= C_out.DB_MAX_OUTPUT_PORT_TYPE
+C_out[1] <= C_out.DB_MAX_OUTPUT_PORT_TYPE
+C_out[2] <= C_out.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+G <= G_wire.DB_MAX_OUTPUT_PORT_TYPE
+P <= P_wire.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder7|CLA_adder:adder1
+a => p.IN0
+a => g.IN0
+b => p.IN1
+b => g.IN1
+Cin => s.IN1
+clk => s~reg0.CLK
+clk => g~reg0.CLK
+clk => p~reg0.CLK
+s <= s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+p <= p~reg0.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder7|CLA_adder:adder2
+a => p.IN0
+a => g.IN0
+b => p.IN1
+b => g.IN1
+Cin => s.IN1
+clk => s~reg0.CLK
+clk => g~reg0.CLK
+clk => p~reg0.CLK
+s <= s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+p <= p~reg0.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder7|CLA_adder:adder3
+a => p.IN0
+a => g.IN0
+b => p.IN1
+b => g.IN1
+Cin => s.IN1
+clk => s~reg0.CLK
+clk => g~reg0.CLK
+clk => p~reg0.CLK
+s <= s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+p <= p~reg0.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder7|CLA_adder:adder4
+a => p.IN0
+a => g.IN0
+b => p.IN1
+b => g.IN1
+Cin => s.IN1
+clk => s~reg0.CLK
+clk => g~reg0.CLK
+clk => p~reg0.CLK
+s <= s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+p <= p~reg0.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder8
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+C0 => C0.IN2
+clk => clk.IN4
+s[0] <= CLA_adder:adder1.port4
+s[1] <= CLA_adder:adder2.port4
+s[2] <= CLA_adder:adder3.port4
+s[3] <= CLA_adder:adder4.port4
+G <= CLA:cla_module.port5
+P <= CLA:cla_module.port6
+C_out <= CLA:cla_module.port4
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder8|CLA:cla_module
+C0 => C_out.IN0
+C0 => C_out.IN1
+C0 => C_out.IN1
+C0 => Cout.IN1
+p[0] => C_out.IN1
+p[0] => C_out.IN0
+p[0] => C_out.IN1
+p[0] => P_wire.IN1
+p[1] => C_out.IN0
+p[1] => C_out.IN1
+p[1] => C_out.IN0
+p[1] => P_wire.IN1
+p[2] => C_out.IN0
+p[2] => C_out.IN1
+p[2] => P_wire.IN0
+p[3] => P_wire.IN1
+p[3] => G_wire.IN0
+g[0] => C_out.IN1
+g[0] => C_out.IN1
+g[0] => C_out.IN1
+g[0] => G_wire.IN1
+g[1] => C_out.IN1
+g[1] => C_out.IN1
+g[1] => G_wire.IN1
+g[2] => C_out.IN1
+g[2] => G_wire.IN1
+g[3] => G_wire.IN1
+C_out[0] <= C_out.DB_MAX_OUTPUT_PORT_TYPE
+C_out[1] <= C_out.DB_MAX_OUTPUT_PORT_TYPE
+C_out[2] <= C_out.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+G <= G_wire.DB_MAX_OUTPUT_PORT_TYPE
+P <= P_wire.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder8|CLA_adder:adder1
+a => p.IN0
+a => g.IN0
+b => p.IN1
+b => g.IN1
+Cin => s.IN1
+clk => s~reg0.CLK
+clk => g~reg0.CLK
+clk => p~reg0.CLK
+s <= s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+p <= p~reg0.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder8|CLA_adder:adder2
+a => p.IN0
+a => g.IN0
+b => p.IN1
+b => g.IN1
+Cin => s.IN1
+clk => s~reg0.CLK
+clk => g~reg0.CLK
+clk => p~reg0.CLK
+s <= s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+p <= p~reg0.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder8|CLA_adder:adder3
+a => p.IN0
+a => g.IN0
+b => p.IN1
+b => g.IN1
+Cin => s.IN1
+clk => s~reg0.CLK
+clk => g~reg0.CLK
+clk => p~reg0.CLK
+s <= s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+p <= p~reg0.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CLA_adder_32_bit|CLA_adder_4_bit:adder8|CLA_adder:adder4
+a => p.IN0
+a => g.IN0
+b => p.IN1
+b => g.IN1
+Cin => s.IN1
+clk => s~reg0.CLK
+clk => g~reg0.CLK
+clk => p~reg0.CLK
+s <= s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+p <= p~reg0.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

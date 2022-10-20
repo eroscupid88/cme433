@@ -1,0 +1,518 @@
+|thirtytwo_bit_rc_adder
+A[0] => a_reg[0].DATAIN
+A[1] => a_reg[1].DATAIN
+A[2] => a_reg[2].DATAIN
+A[3] => a_reg[3].DATAIN
+A[4] => a_reg[4].DATAIN
+A[5] => a_reg[5].DATAIN
+A[6] => a_reg[6].DATAIN
+A[7] => a_reg[7].DATAIN
+A[8] => a_reg[8].DATAIN
+A[9] => a_reg[9].DATAIN
+A[10] => a_reg[10].DATAIN
+A[11] => a_reg[11].DATAIN
+A[12] => a_reg[12].DATAIN
+A[13] => a_reg[13].DATAIN
+A[14] => a_reg[14].DATAIN
+A[15] => a_reg[15].DATAIN
+A[16] => a_reg[16].DATAIN
+A[17] => a_reg[17].DATAIN
+A[18] => a_reg[18].DATAIN
+A[19] => a_reg[19].DATAIN
+A[20] => a_reg[20].DATAIN
+A[21] => a_reg[21].DATAIN
+A[22] => a_reg[22].DATAIN
+A[23] => a_reg[23].DATAIN
+A[24] => a_reg[24].DATAIN
+A[25] => a_reg[25].DATAIN
+A[26] => a_reg[26].DATAIN
+A[27] => a_reg[27].DATAIN
+A[28] => a_reg[28].DATAIN
+A[29] => a_reg[29].DATAIN
+A[30] => a_reg[30].DATAIN
+A[31] => a_reg[31].DATAIN
+B[0] => b_reg[0].DATAIN
+B[1] => b_reg[1].DATAIN
+B[2] => b_reg[2].DATAIN
+B[3] => b_reg[3].DATAIN
+B[4] => b_reg[4].DATAIN
+B[5] => b_reg[5].DATAIN
+B[6] => b_reg[6].DATAIN
+B[7] => b_reg[7].DATAIN
+B[8] => b_reg[8].DATAIN
+B[9] => b_reg[9].DATAIN
+B[10] => b_reg[10].DATAIN
+B[11] => b_reg[11].DATAIN
+B[12] => b_reg[12].DATAIN
+B[13] => b_reg[13].DATAIN
+B[14] => b_reg[14].DATAIN
+B[15] => b_reg[15].DATAIN
+B[16] => b_reg[16].DATAIN
+B[17] => b_reg[17].DATAIN
+B[18] => b_reg[18].DATAIN
+B[19] => b_reg[19].DATAIN
+B[20] => b_reg[20].DATAIN
+B[21] => b_reg[21].DATAIN
+B[22] => b_reg[22].DATAIN
+B[23] => b_reg[23].DATAIN
+B[24] => b_reg[24].DATAIN
+B[25] => b_reg[25].DATAIN
+B[26] => b_reg[26].DATAIN
+B[27] => b_reg[27].DATAIN
+B[28] => b_reg[28].DATAIN
+B[29] => b_reg[29].DATAIN
+B[30] => b_reg[30].DATAIN
+B[31] => b_reg[31].DATAIN
+C_in => c_reg.DATAIN
+clk => clk.IN32
+C_out <= C_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+S[0] <= S[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+S[4] <= S[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+S[5] <= S[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+S[6] <= S[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+S[7] <= S[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+S[8] <= S[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+S[9] <= S[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+S[10] <= S[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+S[11] <= S[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+S[12] <= S[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+S[13] <= S[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+S[14] <= S[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+S[15] <= S[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+S[16] <= S[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+S[17] <= S[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+S[18] <= S[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+S[19] <= S[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+S[20] <= S[20]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+S[21] <= S[21]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+S[22] <= S[22]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+S[23] <= S[23]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+S[24] <= S[24]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+S[25] <= S[25]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+S[26] <= S[26]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+S[27] <= S[27]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+S[28] <= S[28]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+S[29] <= S[29]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+S[30] <= S[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+S[31] <= S[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|thirtytwo_bit_rc_adder|adder:adder1
+A => S.IN0
+A => C_out.IN0
+B => S.IN1
+B => C_out.IN1
+C_in => S.IN1
+C_in => C_out.IN1
+clk => C_out~reg0.CLK
+clk => S~reg0.CLK
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+C_out <= C_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|thirtytwo_bit_rc_adder|adder:adder2
+A => S.IN0
+A => C_out.IN0
+B => S.IN1
+B => C_out.IN1
+C_in => S.IN1
+C_in => C_out.IN1
+clk => C_out~reg0.CLK
+clk => S~reg0.CLK
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+C_out <= C_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|thirtytwo_bit_rc_adder|adder:adder3
+A => S.IN0
+A => C_out.IN0
+B => S.IN1
+B => C_out.IN1
+C_in => S.IN1
+C_in => C_out.IN1
+clk => C_out~reg0.CLK
+clk => S~reg0.CLK
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+C_out <= C_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|thirtytwo_bit_rc_adder|adder:adder4
+A => S.IN0
+A => C_out.IN0
+B => S.IN1
+B => C_out.IN1
+C_in => S.IN1
+C_in => C_out.IN1
+clk => C_out~reg0.CLK
+clk => S~reg0.CLK
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+C_out <= C_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|thirtytwo_bit_rc_adder|adder:adder5
+A => S.IN0
+A => C_out.IN0
+B => S.IN1
+B => C_out.IN1
+C_in => S.IN1
+C_in => C_out.IN1
+clk => C_out~reg0.CLK
+clk => S~reg0.CLK
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+C_out <= C_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|thirtytwo_bit_rc_adder|adder:adder6
+A => S.IN0
+A => C_out.IN0
+B => S.IN1
+B => C_out.IN1
+C_in => S.IN1
+C_in => C_out.IN1
+clk => C_out~reg0.CLK
+clk => S~reg0.CLK
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+C_out <= C_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|thirtytwo_bit_rc_adder|adder:adder7
+A => S.IN0
+A => C_out.IN0
+B => S.IN1
+B => C_out.IN1
+C_in => S.IN1
+C_in => C_out.IN1
+clk => C_out~reg0.CLK
+clk => S~reg0.CLK
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+C_out <= C_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|thirtytwo_bit_rc_adder|adder:adder8
+A => S.IN0
+A => C_out.IN0
+B => S.IN1
+B => C_out.IN1
+C_in => S.IN1
+C_in => C_out.IN1
+clk => C_out~reg0.CLK
+clk => S~reg0.CLK
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+C_out <= C_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|thirtytwo_bit_rc_adder|adder:adder9
+A => S.IN0
+A => C_out.IN0
+B => S.IN1
+B => C_out.IN1
+C_in => S.IN1
+C_in => C_out.IN1
+clk => C_out~reg0.CLK
+clk => S~reg0.CLK
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+C_out <= C_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|thirtytwo_bit_rc_adder|adder:adder10
+A => S.IN0
+A => C_out.IN0
+B => S.IN1
+B => C_out.IN1
+C_in => S.IN1
+C_in => C_out.IN1
+clk => C_out~reg0.CLK
+clk => S~reg0.CLK
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+C_out <= C_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|thirtytwo_bit_rc_adder|adder:adder11
+A => S.IN0
+A => C_out.IN0
+B => S.IN1
+B => C_out.IN1
+C_in => S.IN1
+C_in => C_out.IN1
+clk => C_out~reg0.CLK
+clk => S~reg0.CLK
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+C_out <= C_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|thirtytwo_bit_rc_adder|adder:adder12
+A => S.IN0
+A => C_out.IN0
+B => S.IN1
+B => C_out.IN1
+C_in => S.IN1
+C_in => C_out.IN1
+clk => C_out~reg0.CLK
+clk => S~reg0.CLK
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+C_out <= C_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|thirtytwo_bit_rc_adder|adder:adder13
+A => S.IN0
+A => C_out.IN0
+B => S.IN1
+B => C_out.IN1
+C_in => S.IN1
+C_in => C_out.IN1
+clk => C_out~reg0.CLK
+clk => S~reg0.CLK
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+C_out <= C_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|thirtytwo_bit_rc_adder|adder:adder14
+A => S.IN0
+A => C_out.IN0
+B => S.IN1
+B => C_out.IN1
+C_in => S.IN1
+C_in => C_out.IN1
+clk => C_out~reg0.CLK
+clk => S~reg0.CLK
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+C_out <= C_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|thirtytwo_bit_rc_adder|adder:adder15
+A => S.IN0
+A => C_out.IN0
+B => S.IN1
+B => C_out.IN1
+C_in => S.IN1
+C_in => C_out.IN1
+clk => C_out~reg0.CLK
+clk => S~reg0.CLK
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+C_out <= C_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|thirtytwo_bit_rc_adder|adder:adder16
+A => S.IN0
+A => C_out.IN0
+B => S.IN1
+B => C_out.IN1
+C_in => S.IN1
+C_in => C_out.IN1
+clk => C_out~reg0.CLK
+clk => S~reg0.CLK
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+C_out <= C_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|thirtytwo_bit_rc_adder|adder:adder17
+A => S.IN0
+A => C_out.IN0
+B => S.IN1
+B => C_out.IN1
+C_in => S.IN1
+C_in => C_out.IN1
+clk => C_out~reg0.CLK
+clk => S~reg0.CLK
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+C_out <= C_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|thirtytwo_bit_rc_adder|adder:adder18
+A => S.IN0
+A => C_out.IN0
+B => S.IN1
+B => C_out.IN1
+C_in => S.IN1
+C_in => C_out.IN1
+clk => C_out~reg0.CLK
+clk => S~reg0.CLK
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+C_out <= C_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|thirtytwo_bit_rc_adder|adder:adder19
+A => S.IN0
+A => C_out.IN0
+B => S.IN1
+B => C_out.IN1
+C_in => S.IN1
+C_in => C_out.IN1
+clk => C_out~reg0.CLK
+clk => S~reg0.CLK
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+C_out <= C_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|thirtytwo_bit_rc_adder|adder:adder20
+A => S.IN0
+A => C_out.IN0
+B => S.IN1
+B => C_out.IN1
+C_in => S.IN1
+C_in => C_out.IN1
+clk => C_out~reg0.CLK
+clk => S~reg0.CLK
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+C_out <= C_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|thirtytwo_bit_rc_adder|adder:adder21
+A => S.IN0
+A => C_out.IN0
+B => S.IN1
+B => C_out.IN1
+C_in => S.IN1
+C_in => C_out.IN1
+clk => C_out~reg0.CLK
+clk => S~reg0.CLK
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+C_out <= C_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|thirtytwo_bit_rc_adder|adder:adder22
+A => S.IN0
+A => C_out.IN0
+B => S.IN1
+B => C_out.IN1
+C_in => S.IN1
+C_in => C_out.IN1
+clk => C_out~reg0.CLK
+clk => S~reg0.CLK
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+C_out <= C_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|thirtytwo_bit_rc_adder|adder:adder23
+A => S.IN0
+A => C_out.IN0
+B => S.IN1
+B => C_out.IN1
+C_in => S.IN1
+C_in => C_out.IN1
+clk => C_out~reg0.CLK
+clk => S~reg0.CLK
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+C_out <= C_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|thirtytwo_bit_rc_adder|adder:adder24
+A => S.IN0
+A => C_out.IN0
+B => S.IN1
+B => C_out.IN1
+C_in => S.IN1
+C_in => C_out.IN1
+clk => C_out~reg0.CLK
+clk => S~reg0.CLK
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+C_out <= C_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|thirtytwo_bit_rc_adder|adder:adder25
+A => S.IN0
+A => C_out.IN0
+B => S.IN1
+B => C_out.IN1
+C_in => S.IN1
+C_in => C_out.IN1
+clk => C_out~reg0.CLK
+clk => S~reg0.CLK
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+C_out <= C_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|thirtytwo_bit_rc_adder|adder:adder26
+A => S.IN0
+A => C_out.IN0
+B => S.IN1
+B => C_out.IN1
+C_in => S.IN1
+C_in => C_out.IN1
+clk => C_out~reg0.CLK
+clk => S~reg0.CLK
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+C_out <= C_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|thirtytwo_bit_rc_adder|adder:adder27
+A => S.IN0
+A => C_out.IN0
+B => S.IN1
+B => C_out.IN1
+C_in => S.IN1
+C_in => C_out.IN1
+clk => C_out~reg0.CLK
+clk => S~reg0.CLK
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+C_out <= C_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|thirtytwo_bit_rc_adder|adder:adder28
+A => S.IN0
+A => C_out.IN0
+B => S.IN1
+B => C_out.IN1
+C_in => S.IN1
+C_in => C_out.IN1
+clk => C_out~reg0.CLK
+clk => S~reg0.CLK
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+C_out <= C_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|thirtytwo_bit_rc_adder|adder:adder29
+A => S.IN0
+A => C_out.IN0
+B => S.IN1
+B => C_out.IN1
+C_in => S.IN1
+C_in => C_out.IN1
+clk => C_out~reg0.CLK
+clk => S~reg0.CLK
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+C_out <= C_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|thirtytwo_bit_rc_adder|adder:adder30
+A => S.IN0
+A => C_out.IN0
+B => S.IN1
+B => C_out.IN1
+C_in => S.IN1
+C_in => C_out.IN1
+clk => C_out~reg0.CLK
+clk => S~reg0.CLK
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+C_out <= C_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|thirtytwo_bit_rc_adder|adder:adder31
+A => S.IN0
+A => C_out.IN0
+B => S.IN1
+B => C_out.IN1
+C_in => S.IN1
+C_in => C_out.IN1
+clk => C_out~reg0.CLK
+clk => S~reg0.CLK
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+C_out <= C_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|thirtytwo_bit_rc_adder|adder:adder32
+A => S.IN0
+A => C_out.IN0
+B => S.IN1
+B => C_out.IN1
+C_in => S.IN1
+C_in => C_out.IN1
+clk => C_out~reg0.CLK
+clk => S~reg0.CLK
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+C_out <= C_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

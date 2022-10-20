@@ -1,0 +1,54 @@
+|parity_davio
+D[0] => D[0].IN1
+D[1] => D[1].IN1
+D[2] => D[2].IN1
+D[3] => D[3].IN1
+D[4] => D[4].IN1
+D[5] => D[5].IN1
+D[6] => D[6].IN1
+F << F.DB_MAX_OUTPUT_PORT_TYPE
+F_conventional << parity_conventional:parity_conventional.F
+
+
+|parity_davio|parity_conventional:parity_conventional
+D[0] => F.IN0
+D[0] => F.IN0
+D[0] => F.IN0
+D[0] => F.IN0
+D[1] => F.IN1
+D[1] => F.IN1
+D[1] => F.IN0
+D[1] => F.IN1
+D[2] => F.IN0
+D[2] => F.IN1
+D[2] => F.IN1
+D[2] => F.IN1
+D[2] => F.IN1
+D[2] => F.IN1
+D[2] => F.IN1
+D[3] => F.IN1
+D[3] => F.IN1
+D[3] => F.IN1
+D[3] => F.IN1
+D[3] => F.IN1
+D[3] => F.IN1
+D[3] => F.IN1
+D[3] => F.IN1
+D[3] => F.IN1
+D[4] => F.IN1
+D[4] => F.IN1
+D[4] => F.IN1
+D[5] => F.IN1
+D[5] => F.IN1
+D[5] => F.IN1
+D[5] => F.IN1
+D[5] => F.IN1
+D[5] => F.IN1
+D[6] => F.IN1
+D[6] => F.IN1
+D[6] => F.IN1
+D[6] => F.IN1
+D[6] => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+

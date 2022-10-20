@@ -1,0 +1,29 @@
+`timescale 1ps/1ps
+module tbench_top;
+
+	wire clk;
+  	wire [31:0] a, b, s;
+  wire C0, Cout,G,P;  
+initial
+    	clk = 0;
+	always	
+		begin 
+			#1 clk = ~clk;
+		end
+
+  
+
+CLA_adder_32_bit CLA_adder_32_bit(.a(a),
+			.b(b),
+			.C0(C0),
+			.clk(clk),
+			.s(s),
+			.Cout(Cout),
+			.G(G),
+			.P(P)
+			);
+//cl_adder_tb tb(.*);
+
+
+
+endmodule

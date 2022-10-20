@@ -1,0 +1,217 @@
+# Loading project carry_lookahead_adder_testbench
+# reading /opt/intelFPGA/20.1.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project CME341_latest_microprocessor_testbench
+# reading /opt/intelFPGA/20.1.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project CME341_latest_microprocessor_testbench
+# Compile of final_exam_microprocessor.vo was successful.
+# Compile of microprocessor_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.microprocessor_tb -L altera_mf_ver -L cycloneive_ver -L altera_ver
+# vsim work.microprocessor_tb -L altera_mf_ver -L cycloneive_ver -L altera_ver 
+# Start time: 16:08:14 on Oct 14,2022
+# Loading work.microprocessor_tb
+# ** Error: (vsim-3033) Instantiation of 'Microprocessor' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /microprocessor_tb File: /home/dtv782/engr-ece/CME 433/labs/lab 3/microprocessor_slow_rom/simulation/modelsim/microprocessor_tb.v Line: 14
+#         Searched libraries:
+#             /opt/intelFPGA/20.1.1/modelsim_ase/altera/verilog/altera_mf
+#             /opt/intelFPGA/20.1.1/modelsim_ase/altera/verilog/cycloneive
+#             /opt/intelFPGA/20.1.1/modelsim_ase/altera/verilog/altera
+#             /home/dtv782/engr-ece/CME 433/labs/lab 3/microprocessor_slow_rom/simulation/modelsim/work
+# Error loading design
+# End time: 16:08:14 on Oct 14,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 8
+# Compile of final_exam_microprocessor.vo was successful.
+# Compile of microprocessor_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -L altera_mf_ver -L cycloneive_ver -L altera_ver work.microprocessor_tb
+# vsim -L altera_mf_ver -L cycloneive_ver -L altera_ver work.microprocessor_tb 
+# Start time: 16:09:13 on Oct 14,2022
+# Loading work.microprocessor_tb
+# ** Fatal: (vsim-3381) Obsolete library format for design unit. Design unit '/home/dtv782/engr-ece/CME 433/labs/lab 3/microprocessor_slow_rom/simulation/modelsim/work.final_exam_microprocessor'
+#    Time: 0 ps  Iteration: 0  Instance: /microprocessor_tb File: /home/dtv782/engr-ece/CME 433/labs/lab 3/microprocessor_slow_rom/simulation/modelsim/microprocessor_tb.v
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 16:09:13 on Oct 14,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2
+# reading /opt/intelFPGA/20.1.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project microprocessor_tb
+# Compile of microprocessor.vo was successful.
+# Compile of microprocessor_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -L altera_mf_ver -L cycloneive_ver -L altera_ver work.microprocessor_tb
+# vsim -L altera_mf_ver -L cycloneive_ver -L altera_ver work.microprocessor_tb 
+# Start time: 16:36:22 on Oct 14,2022
+# Loading work.microprocessor_tb
+# ** Error: (vsim-3033) Instantiation of 'Microprocessor' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /microprocessor_tb File: /home/dtv782/engr-ece/CME 433/labs/lab_3/simulation/modelsim/microprocessor_tb.v Line: 14
+#         Searched libraries:
+#             /opt/intelFPGA/20.1.1/modelsim_ase/altera/verilog/altera_mf
+#             /opt/intelFPGA/20.1.1/modelsim_ase/altera/verilog/cycloneive
+#             /opt/intelFPGA/20.1.1/modelsim_ase/altera/verilog/altera
+#             /home/dtv782/engr-ece/CME 433/labs/lab_3/simulation/modelsim/work
+# Error loading design
+# End time: 16:36:23 on Oct 14,2022, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 6
+# reading /opt/intelFPGA/20.1.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project Microprocessor_tb
+# Compile of Microprocessor.vo was successful.
+# Compile of microprocessor_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -L altera_mf_ver -L cycloneive_ver -L altera_ver work.microprocessor_tb
+# vsim -L altera_mf_ver -L cycloneive_ver -L altera_ver work.microprocessor_tb 
+# Start time: 16:45:18 on Oct 14,2022
+# Loading work.microprocessor_tb
+# Loading work.Microprocessor
+# Loading work.hard_block
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 16, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /microprocessor_tb/uut File: /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v Line: 14
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'x0'.
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'x1'.
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'y0'.
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'y1'.
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'r'.
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'm'.
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'i'.
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'pc'.
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'from_CU'.
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'ir'.
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'register_enables'.
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'zero_flag'.
+add wave -position insertpoint sim:/microprocessor_tb/uut/*
+run -all
+# ** Note: $stop    : /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(22)
+#    Time: 1 ms  Iteration: 0  Instance: /microprocessor_tb
+# Break in Module microprocessor_tb at /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v line 22
+# Compile of Microprocessor.vo was successful.
+# Compile of microprocessor_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -L altera_mf_ver -L cycloneive_ver -L altera_ver work.microprocessor_tb
+# End time: 16:46:42 on Oct 14,2022, Elapsed time: 0:01:24
+# Errors: 0, Warnings: 20
+# vsim -L altera_mf_ver -L cycloneive_ver -L altera_ver work.microprocessor_tb 
+# Start time: 16:46:42 on Oct 14,2022
+# Loading work.microprocessor_tb
+# Loading work.Microprocessor
+# Loading work.hard_block
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 16, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /microprocessor_tb/uut File: /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v Line: 14
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'x0'.
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'x1'.
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'y0'.
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'y1'.
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'r'.
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'm'.
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'i'.
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'pc'.
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'from_CU'.
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'ir'.
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'register_enables'.
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'zero_flag'.
+add wave -position insertpoint sim:/microprocessor_tb/uut/*
+run -all
+# ** Note: $stop    : /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(22)
+#    Time: 1 ms  Iteration: 0  Instance: /microprocessor_tb
+# Break in Module microprocessor_tb at /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v line 22
+# Compile of Microprocessor.vo was successful.
+# Compile of microprocessor_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -L altera_mf_ver -L cycloneive_ver -L altera_ver work.microprocessor_tb
+# End time: 16:58:56 on Oct 14,2022, Elapsed time: 0:12:14
+# Errors: 0, Warnings: 15
+# vsim -L altera_mf_ver -L cycloneive_ver -L altera_ver work.microprocessor_tb 
+# Start time: 16:58:56 on Oct 14,2022
+# Loading work.microprocessor_tb
+# Loading work.Microprocessor
+# Loading work.hard_block
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 16, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /microprocessor_tb/uut File: /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v Line: 14
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'x0'.
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'x1'.
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'y0'.
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'y1'.
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'r'.
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'm'.
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'i'.
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'pc'.
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'from_CU'.
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'ir'.
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'register_enables'.
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'zero_flag'.
+# Loading altera_ver.PRIM_GDFF_LOW
+add wave -position insertpoint sim:/microprocessor_tb/uut/*
+run -all
+# ** Note: $stop    : /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(22)
+#    Time: 1 ms  Iteration: 0  Instance: /microprocessor_tb
+# Break in Module microprocessor_tb at /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v line 22
+# Compile of Microprocessor.vo was successful.
+# Compile of microprocessor_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -L altera_mf_ver -L cycloneive_ver -L altera_ver work.microprocessor_tb
+# End time: 17:05:17 on Oct 14,2022, Elapsed time: 0:06:21
+# Errors: 0, Warnings: 15
+# vsim -L altera_mf_ver -L cycloneive_ver -L altera_ver work.microprocessor_tb 
+# Start time: 17:05:17 on Oct 14,2022
+# Loading work.microprocessor_tb
+# Loading work.Microprocessor
+# Loading work.hard_block
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 16, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /microprocessor_tb/uut File: /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v Line: 14
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'x0'.
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'x1'.
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'y0'.
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'y1'.
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'r'.
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'm'.
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'i'.
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'pc'.
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'from_CU'.
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'ir'.
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'register_enables'.
+# ** Warning: (vsim-3722) /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(14): [TFMPC] - Missing connection for port 'zero_flag'.
+# Loading altera_ver.PRIM_GDFF_LOW
+add wave -position insertpoint  \
+sim:/microprocessor_tb/uut/clk \
+sim:/microprocessor_tb/uut/reset \
+sim:/microprocessor_tb/uut/i_pins \
+sim:/microprocessor_tb/uut/o_reg \
+sim:/microprocessor_tb/uut/x0 \
+sim:/microprocessor_tb/uut/x1 \
+sim:/microprocessor_tb/uut/y0 \
+sim:/microprocessor_tb/uut/y1 \
+sim:/microprocessor_tb/uut/r \
+sim:/microprocessor_tb/uut/m \
+sim:/microprocessor_tb/uut/i \
+sim:/microprocessor_tb/uut/pc \
+sim:/microprocessor_tb/uut/from_CU \
+sim:/microprocessor_tb/uut/ir \
+sim:/microprocessor_tb/uut/register_enables
+run -all
+# ** Note: $stop    : /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v(22)
+#    Time: 1 ms  Iteration: 0  Instance: /microprocessor_tb
+# Break in Module microprocessor_tb at /home/dtv782/engr-ece/CME 433/labs/test/simulation/modelsim/microprocessor_tb.v line 22
+run -all
+# Compile of Microprocessor.vo was successful.
+# Compile of microprocessor_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of Microprocessor.vo was successful.
+# Compile of microprocessor_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of Microprocessor.vo was successful.
+# Compile of microprocessor_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+# Break key hit
+# Simulation stop requested.
+# End time: 17:17:16 on Oct 14,2022, Elapsed time: 0:11:59
+# Errors: 0, Warnings: 18

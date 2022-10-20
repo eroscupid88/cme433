@@ -1,0 +1,105 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/dtv782/engr-ece/CME 433/practice/simulation/modelsim
+vhard_block
+Z0 !s110 1663785578
+!i10b 1
+!s100 AlVHE0P`:k_`g8`EYzh:`0
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IU23goz?iRZKOja6jRIVEY2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 d/home/dtv782/engr-ece/CME 433/labs/Lab 1/simulation/modelsim
+Z4 w1663785488
+Z5 8/home/dtv782/engr-ece/CME 433/labs/Lab 1/simulation/modelsim/lab1.vo
+Z6 F/home/dtv782/engr-ece/CME 433/labs/Lab 1/simulation/modelsim/lab1.vo
+!i122 46
+L0 433 34
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1663785578.000000
+!s107 /home/dtv782/engr-ece/CME 433/labs/Lab 1/simulation/modelsim/lab1.vo|
+Z9 !s90 -reportprogress|300|-work|work|-stats=none|/home/dtv782/engr-ece/CME 433/labs/Lab 1/simulation/modelsim/lab1.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vlab1_parity_davio_tb
+R0
+!i10b 1
+!s100 EJV2IZE7OBAP2doZGQUW>2
+R1
+IF<jc8nE@ocPR>M11zdaLW3
+R2
+R3
+Z12 w1663785395
+Z13 8/home/dtv782/engr-ece/CME 433/labs/Lab 1/simulation/modelsim/lab1_parity_davio_tb.v
+Z14 F/home/dtv782/engr-ece/CME 433/labs/Lab 1/simulation/modelsim/lab1_parity_davio_tb.v
+!i122 45
+L0 9 16
+R7
+r1
+!s85 0
+31
+R8
+Z15 !s107 /home/dtv782/engr-ece/CME 433/labs/Lab 1/simulation/modelsim/lab1_parity_davio_tb.v|
+Z16 !s90 -reportprogress|300|-work|work|-stats=none|/home/dtv782/engr-ece/CME 433/labs/Lab 1/simulation/modelsim/lab1_parity_davio_tb.v|
+!i113 1
+R10
+R11
+Xlab1_parity_davio_tb_v_unit
+DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+R0
+VCTSLYlV5N1fJTbnMC<7i;3
+r1
+!s85 0
+!i10b 1
+!s100 QgimE7k6k9NGS2FfahH1B1
+ICTSLYlV5N1fJTbnMC<7i;3
+!i103 1
+S1
+R3
+R12
+R13
+R14
+!i122 45
+L0 24 0
+R7
+31
+R8
+R15
+R16
+!i113 1
+R10
+R11
+vparity_davio
+R0
+!i10b 1
+!s100 CZe`9dGXWH9bh:`a7n6n50
+R1
+I5RIIS6XD[BM]`;dMLT0nS2
+R2
+R3
+R4
+R5
+R6
+!i122 46
+L0 32 400
+R7
+r1
+!s85 0
+31
+R8
+Z17 !s107 /home/dtv782/engr-ece/CME 433/labs/Lab 1/simulation/modelsim/lab1.vo|
+R9
+!i113 1
+R10
+R11

@@ -1,0 +1,45 @@
+module thirtytwo_bit_rc_adder(
+input wire [31:0] A,
+input wire [31:0] B,
+input wire C_in,
+input wire clk, 
+output wire C_out,
+output wire [31:0] S
+);
+wire w1,w2,w3,w4,w5,w6,w7,w8,w9,w10,w11,w12,w13,w14,w15,w16,w17,w18,w19,w20,w21,w22,w23,w24,w25,w26,w27,w28,w29,w30,w31;
+
+adder adder1(A[0],B[0],C_in,clk,S[0],w1);
+adder adder2(A[1],B[1],w1,clk,S[1],w2);
+adder adder3(A[2],B[2],w2,clk,S[2],w3);
+adder adder4(A[3],B[3],w3,clk,S[3],w4);
+adder adder5(A[4],B[4],w4,clk,S[4],w5);
+adder adder6(A[5],B[5],w5,clk,S[5],w6);
+adder adder7(A[6],B[6],w6,clk,S[6],w7);
+adder adder8(A[7],B[7],w7,clk,S[7],w8);
+adder adder9(A[8],B[8],w8,clk,S[8],w9);
+adder adder10(A[9],B[9],w9,clk,S[9],w10);
+adder adder11(A[10],B[10],w10,clk,S[10],w11);
+adder adder12(A[11],B[11],w11,clk,S[11],w12);
+adder adder13(A[12],B[12],w12,clk,S[12],w13);
+adder adder14(A[13],B[13],w13,clk,S[13],w14);
+adder adder15(A[14],B[14],w14,clk,S[14],w15);
+adder adder16(A[15],B[15],w15,clk,S[15],w16);
+adder adder17(A[16],B[16],w16,clk,S[16],w17);
+adder adder18(A[17],B[17],w17,clk,S[17],w18);
+adder adder19(A[18],B[18],w18,clk,S[18],w19);
+adder adder20(A[19],B[19],w19,clk,S[19],w20);
+adder adder21(A[20],B[20],w20,clk,S[20],w21);
+adder adder22(A[21],B[21],w21,clk,S[21],w22);
+adder adder23(A[22],B[22],w22,clk,S[22],w23);
+adder adder24(A[23],B[23],w23,clk,S[23],w24);
+adder adder25(A[24],B[24],w24,clk,S[24],w25);
+adder adder26(A[25],B[25],w25,clk,S[25],w26);
+adder adder27(A[26],B[26],w26,clk,S[26],w27);
+adder adder28(A[27],B[27],w27,clk,S[27],w28);
+adder adder29(A[28],B[28],w28,clk,S[28],w29);
+adder adder30(A[29],B[29],w29,clk,S[29],w30);
+adder adder31(A[30],B[30],w30,clk,S[30],w31);
+adder adder32(A[31],B[31],w31,clk,S[31],C_out);
+
+
+endmodule

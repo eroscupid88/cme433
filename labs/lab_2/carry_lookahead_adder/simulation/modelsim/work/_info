@@ -1,0 +1,108 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/dtv782/engr-ece/CME 433/labs/lab_2/cl_adder/simulation/modelsim
+vcl_adder_tb
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z1 !s110 1665100251
+!i10b 1
+!s100 eXocP[7AezidGP2[>chdI1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IEAdYJYiimUOV@m>`Z34^N1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+Z4 d/home/dtv782/engr-ece/CME 433/labs/lab_2/carry_lookahead_adder/simulation/modelsim
+w1665098044
+8/home/dtv782/engr-ece/CME 433/labs/lab_2/carry_lookahead_adder/simulation/modelsim/cl_adder_tb.sv
+F/home/dtv782/engr-ece/CME 433/labs/lab_2/carry_lookahead_adder/simulation/modelsim/cl_adder_tb.sv
+!i122 47
+L0 1 7
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1665100251.000000
+!s107 /home/dtv782/engr-ece/CME 433/labs/lab_2/carry_lookahead_adder/simulation/modelsim/cl_adder_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/dtv782/engr-ece/CME 433/labs/lab_2/carry_lookahead_adder/simulation/modelsim/cl_adder_tb.sv|
+!i113 1
+Z7 o-work work -sv
+Z8 tCvgOpt 0
+vCLA_adder_32_bit
+R1
+!i10b 1
+!s100 IXMX8hef1gZ`flEX_o?253
+R2
+IIaiB4Jcg;jU7AG?Ojc^>N1
+R3
+R4
+Z9 w1665098636
+Z10 8/home/dtv782/engr-ece/CME 433/labs/lab_2/carry_lookahead_adder/simulation/modelsim/CLA_adder_32_bit.vo
+Z11 F/home/dtv782/engr-ece/CME 433/labs/lab_2/carry_lookahead_adder/simulation/modelsim/CLA_adder_32_bit.vo
+!i122 48
+L0 32 6237
+R5
+r1
+!s85 0
+31
+R6
+Z12 !s107 /home/dtv782/engr-ece/CME 433/labs/lab_2/carry_lookahead_adder/simulation/modelsim/CLA_adder_32_bit.vo|
+Z13 !s90 -reportprogress|300|-work|work|-stats=none|/home/dtv782/engr-ece/CME 433/labs/lab_2/carry_lookahead_adder/simulation/modelsim/CLA_adder_32_bit.vo|
+!i113 1
+Z14 o-work work
+R8
+n@c@l@a_adder_32_bit
+vhard_block
+R1
+!i10b 1
+!s100 hXK0f9VAT;0ZGG0^<QeSW1
+R2
+Iza[GF4JARWh2XLEFNfD<S3
+R3
+R4
+R9
+R10
+R11
+!i122 48
+L0 6270 34
+R5
+r1
+!s85 0
+31
+R6
+R12
+R13
+!i113 1
+R14
+R8
+vtbench_top
+R0
+R1
+!i10b 1
+!s100 V`]R9HEPaS7n;7^zJoXoT3
+R2
+Inle;g;@R3ORTWKZO8KKGN0
+R3
+S1
+R4
+w1665100236
+8/home/dtv782/engr-ece/CME 433/labs/lab_2/carry_lookahead_adder/simulation/modelsim/tbench_top.sv
+F/home/dtv782/engr-ece/CME 433/labs/lab_2/carry_lookahead_adder/simulation/modelsim/tbench_top.sv
+!i122 49
+L0 2 28
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/dtv782/engr-ece/CME 433/labs/lab_2/carry_lookahead_adder/simulation/modelsim/tbench_top.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/dtv782/engr-ece/CME 433/labs/lab_2/carry_lookahead_adder/simulation/modelsim/tbench_top.sv|
+!i113 1
+R7
+R8

@@ -1,0 +1,19 @@
+{/home/dtv782/engr-ece/CME 433/labs/Lab 1/simulation/modelsim/lab1.vo} {1 {vlog -work work -stats=none {/home/dtv782/engr-ece/CME 433/labs/Lab 1/simulation/modelsim/lab1.vo}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module parity_davio
+-- Compiling module hard_block
+
+Top level modules:
+	parity_davio
+
+} {} {}} {/home/dtv782/engr-ece/CME 433/labs/Lab 1/simulation/modelsim/lab1_parity_davio_tb.v} {2 {vlog -work work -stats=none {/home/dtv782/engr-ece/CME 433/labs/Lab 1/simulation/modelsim/lab1_parity_davio_tb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module lab1_parity_davio_tb
+** Warning: /home/dtv782/engr-ece/CME 433/labs/Lab 1/simulation/modelsim/lab1_parity_davio_tb.v(24): (vlog-2283) Extra semicolon in $unit (global) scope.
+** Warning: /home/dtv782/engr-ece/CME 433/labs/Lab 1/simulation/modelsim/lab1_parity_davio_tb.v(24): (vlog-2284) Empty $unit scope found.
+-- Compiling package lab1_parity_davio_tb_v_unit
+
+Top level modules:
+	lab1_parity_davio_tb
+
+} {} {}}

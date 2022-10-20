@@ -1,0 +1,102 @@
+m255
+K4
+z2
+!s11f MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/CME341/prototypes_final_exam_ready/simulation/modelsim
+vhard_block
+Z0 !s110 1666120337
+!i10b 1
+!s100 =kkf:dF5ll>?ZFPOEJGA93
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IaIHa;mAemb`DDC^<d8`SK3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 d/home/dtv782/engr-ece/CME 433/labs/lab_3/simulation/modelsim
+Z4 w1666120134
+Z5 8/home/dtv782/engr-ece/CME 433/labs/lab_3/simulation/modelsim/Microprocessor.vo
+Z6 F/home/dtv782/engr-ece/CME 433/labs/lab_3/simulation/modelsim/Microprocessor.vo
+!i122 0
+L0 6482 34
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1666120337.000000
+Z9 !s107 /home/dtv782/engr-ece/CME 433/labs/lab_3/simulation/modelsim/Microprocessor.vo|
+Z10 !s90 -reportprogress|300|-work|work|-stats=none|/home/dtv782/engr-ece/CME 433/labs/lab_3/simulation/modelsim/Microprocessor.vo|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+vmicroprocessor
+!s110 1666127991
+!i10b 1
+!s100 ic0AZgc>:aYUBLGXGzSXT3
+IN2b=TQB@F7Oc5hF0ecI1T0
+R2
+dC:/CME433/test/simulation/modelsim
+w1666127969
+8C:/CME433/test/simulation/modelsim/Microprocessor.vo
+FC:/CME433/test/simulation/modelsim/Microprocessor.vo
+L0 31
+OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1666127991.000000
+!s107 C:/CME433/test/simulation/modelsim/Microprocessor.vo|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/CME433/test/simulation/modelsim/Microprocessor.vo|
+!i113 1
+R11
+R12
+vMicroprocessor
+R0
+!i10b 1
+!s100 `7?GY^FR^gc6QMze7jBV;3
+R1
+ICaOSTY=gkFMYQ8N`1M`IU0
+R2
+R3
+R4
+R5
+R6
+!i122 0
+L0 32 6449
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+n@microprocessor
+vmicroprocessor_tb
+R0
+!i10b 1
+!s100 NAQcK:b3>469KX>n[=E?82
+R1
+IGb[S4Cd5`haT`?d:MQ0`02
+R2
+R3
+w1666124036
+8/home/dtv782/engr-ece/CME 433/labs/lab_3/simulation/modelsim/microprocessor_tb.v
+F/home/dtv782/engr-ece/CME 433/labs/lab_3/simulation/modelsim/microprocessor_tb.v
+!i122 1
+L0 3 47
+R7
+r1
+!s85 0
+31
+R8
+!s107 /home/dtv782/engr-ece/CME 433/labs/lab_3/simulation/modelsim/microprocessor_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/dtv782/engr-ece/CME 433/labs/lab_3/simulation/modelsim/microprocessor_tb.v|
+!i113 1
+R11
+R12

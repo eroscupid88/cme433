@@ -1,0 +1,23 @@
+{/home/dtv782/engr-ece/CME 433/labs/lab_2/carry_lookahead_adder/simulation/modelsim/tbench_top.sv} {1 {vlog -work work -sv -stats=none {/home/dtv782/engr-ece/CME 433/labs/lab_2/carry_lookahead_adder/simulation/modelsim/tbench_top.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tbench_top
+
+Top level modules:
+	tbench_top
+
+} {} {}} {/home/dtv782/engr-ece/CME 433/labs/lab_2/carry_lookahead_adder/simulation/modelsim/cl_adder_tb.sv} {1 {vlog -work work -sv -stats=none {/home/dtv782/engr-ece/CME 433/labs/lab_2/carry_lookahead_adder/simulation/modelsim/cl_adder_tb.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module cl_adder_tb
+
+Top level modules:
+	cl_adder_tb
+
+} {} {}} {/home/dtv782/engr-ece/CME 433/labs/lab_2/carry_lookahead_adder/simulation/modelsim/CLA_adder_32_bit.vo} {1 {vlog -work work -stats=none {/home/dtv782/engr-ece/CME 433/labs/lab_2/carry_lookahead_adder/simulation/modelsim/CLA_adder_32_bit.vo}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module CLA_adder_32_bit
+-- Compiling module hard_block
+
+Top level modules:
+	CLA_adder_32_bit
+
+} {} {}}
