@@ -8,43 +8,43 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 d/home/dtv782/engr-ece/CME 433/labs/lab_3/microprocessor_srom_pipe1/simulation/modelsim
+d/home/dtv782/engr-ece
 vhard_block
-Z1 !s110 1666329846
+Z0 !s110 1666362582
 !i10b 1
-!s100 n^[k>deDhGNL=B>HBUME:3
-Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IR9X;c;3bi=ATE>WJE<zM40
-Z3 VDg1SIo80bB@j0V0VzS_@n1
-R0
-Z4 w1666329725
+!s100 CR6d8dccmzP8`CcK1ID2B1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Ih4`>R1i3V[;UicX135JoH0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 d/home/dtv782/engr-ece/CME 433/labs/lab_3/microprocessor_srom_pipe1/simulation/modelsim
+Z4 w1666362559
 Z5 8/home/dtv782/engr-ece/CME 433/labs/lab_3/microprocessor_srom_pipe1/simulation/modelsim/Microprocessor.vo
 Z6 F/home/dtv782/engr-ece/CME 433/labs/lab_3/microprocessor_srom_pipe1/simulation/modelsim/Microprocessor.vo
-!i122 26
-L0 12668 34
+!i122 6
+L0 24733 34
 Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1666329846.000000
+Z8 !s108 1666362582.000000
 Z9 !s107 /home/dtv782/engr-ece/CME 433/labs/lab_3/microprocessor_srom_pipe1/simulation/modelsim/Microprocessor.vo|
 Z10 !s90 -reportprogress|300|-work|work|-stats=none|/home/dtv782/engr-ece/CME 433/labs/lab_3/microprocessor_srom_pipe1/simulation/modelsim/Microprocessor.vo|
 !i113 1
 Z11 o-work work
 Z12 tCvgOpt 0
 vMicroprocessor
-R1
-!i10b 1
-!s100 S^GAKY:NN;iV<Jf;eP7;_3
-R2
-InEn`cZCD0UG9jUhULaP;g2
-R3
 R0
+!i10b 1
+!s100 FW1SS<5MVQG_6z@`2Z>A?1
+R1
+IO6J7h5cA:hU6l80E;jADi3
+R2
+R3
 R4
 R5
 R6
-!i122 26
-L0 32 12635
+!i122 6
+L0 32 24700
 R7
 r1
 !s85 0
@@ -57,18 +57,18 @@ R11
 R12
 n@microprocessor
 vmicroprocessor_tb
-!s110 1666329847
-!i10b 1
-!s100 QLgIYjND9mKnWmj9=Q:L90
-R2
-IOPdhQiz@zE4756L`mN=>X2
-R3
 R0
-w1666329827
+!i10b 1
+!s100 kAJ6mi8h>?o?hNEXZ50X73
+R1
+IzCXPfAJ<2fP:<4zOz[zjf0
+R2
+R3
+w1666362369
 8/home/dtv782/engr-ece/CME 433/labs/lab_3/microprocessor_srom_pipe1/simulation/modelsim/microprocessor_tb.v
 F/home/dtv782/engr-ece/CME 433/labs/lab_3/microprocessor_srom_pipe1/simulation/modelsim/microprocessor_tb.v
-!i122 27
-L0 3 52
+!i122 7
+L0 3 55
 R7
 r1
 !s85 0

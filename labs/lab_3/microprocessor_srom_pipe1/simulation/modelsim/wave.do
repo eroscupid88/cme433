@@ -6,7 +6,9 @@ add wave -noupdate -radix hexadecimal /microprocessor_tb/i_pins
 add wave -noupdate -radix hexadecimal /microprocessor_tb/o_reg
 add wave -noupdate -radix hexadecimal /microprocessor_tb/ir
 add wave -noupdate -radix hexadecimal /microprocessor_tb/pc
-add wave -noupdate -radix hexadecimal /microprocessor_tb/pm_data_delay
+add wave -noupdate -radix hexadecimal /microprocessor_tb/pm_address_out
+add wave -noupdate -radix hexadecimal /microprocessor_tb/pm_data_out
+add wave -noupdate -radix hexadecimal /microprocessor_tb/data_pipe
 TreeUpdate [SetDefaultTree]
 WaveRestoreCursors {{Cursor 1} {0 ps} 0}
 quietly wave cursor active 0
