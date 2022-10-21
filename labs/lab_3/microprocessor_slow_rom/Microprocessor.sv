@@ -11,7 +11,7 @@ output reg [3:0] o_reg,
 						m,
 						i,
 						data_bus,
-output reg [7:0] pm_data_out,pm_address_out,pc,from_PS,from_ID,from_CU,ir,
+output reg [7:0] pm_data_out,pm_address_out,pm_address,pm_data,pc,from_PS,from_ID,from_CU,ir,
 output reg [8:0] register_enables,
 output reg NOPC8,
 output reg NOPCF,
@@ -25,10 +25,12 @@ reg sync_reset;
 wire jump,conditional_jump,i_mux_select,y_reg_select,x_reg_select;
 
 wire [3:0] LS_nibble_ir,source_select,dm;
-wire [7:0] pm_address,pm_data;
+//wire [7:0] pm_data,pm_address;
 
 always @(posedge clk)
 		sync_reset <= reset;
+comb_logic comb_logic1(.output_data_out(pm_address_out),.input_data_in(pm_address));
+comb_logic comb_logic2(.output_data_out(pm_data_out),.input_data_in(pm_data));			
 
 program_sequencer prog_sequencer(.clk(clk),
 											.sync_reset(sync_reset),
@@ -40,19 +42,14 @@ program_sequencer prog_sequencer(.clk(clk),
 											.pc(pc),
 											.from_PS(from_PS));
 											
-comb_logic comb_logic1(
-								.output_data_out(pm_address_out),
-								.input_data_in(pm_address)
-								);								
+					
 											
 program_memory prog_mem(.clock(~clk),
 								.address(pm_address_out),
 								.q(pm_data)
 								);
 								
-comb_logic comb_logic2(.output_data_out(pm_data_out),
-								.input_data_in(pm_data)
-								);								
+							
 								
 instruction_decoder instr_decoder(.clk(clk),
 											 .sync_reset(sync_reset),

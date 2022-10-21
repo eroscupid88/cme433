@@ -57,6 +57,22 @@ pm_address_out[4] <= pm_address_out[4].DB_MAX_OUTPUT_PORT_TYPE
 pm_address_out[5] <= pm_address_out[5].DB_MAX_OUTPUT_PORT_TYPE
 pm_address_out[6] <= pm_address_out[6].DB_MAX_OUTPUT_PORT_TYPE
 pm_address_out[7] <= pm_address_out[7].DB_MAX_OUTPUT_PORT_TYPE
+pm_address[0] <= pm_address[0].DB_MAX_OUTPUT_PORT_TYPE
+pm_address[1] <= pm_address[1].DB_MAX_OUTPUT_PORT_TYPE
+pm_address[2] <= pm_address[2].DB_MAX_OUTPUT_PORT_TYPE
+pm_address[3] <= pm_address[3].DB_MAX_OUTPUT_PORT_TYPE
+pm_address[4] <= pm_address[4].DB_MAX_OUTPUT_PORT_TYPE
+pm_address[5] <= pm_address[5].DB_MAX_OUTPUT_PORT_TYPE
+pm_address[6] <= pm_address[6].DB_MAX_OUTPUT_PORT_TYPE
+pm_address[7] <= pm_address[7].DB_MAX_OUTPUT_PORT_TYPE
+pm_data[0] <= pm_data[0].DB_MAX_OUTPUT_PORT_TYPE
+pm_data[1] <= pm_data[1].DB_MAX_OUTPUT_PORT_TYPE
+pm_data[2] <= pm_data[2].DB_MAX_OUTPUT_PORT_TYPE
+pm_data[3] <= pm_data[3].DB_MAX_OUTPUT_PORT_TYPE
+pm_data[4] <= pm_data[4].DB_MAX_OUTPUT_PORT_TYPE
+pm_data[5] <= pm_data[5].DB_MAX_OUTPUT_PORT_TYPE
+pm_data[6] <= pm_data[6].DB_MAX_OUTPUT_PORT_TYPE
+pm_data[7] <= pm_data[7].DB_MAX_OUTPUT_PORT_TYPE
 pc[0] <= program_sequencer:prog_sequencer.pc
 pc[1] <= program_sequencer:prog_sequencer.pc
 pc[2] <= program_sequencer:prog_sequencer.pc
@@ -111,6 +127,44 @@ NOPCF <= NOPCF.DB_MAX_OUTPUT_PORT_TYPE
 NOPD8 <= NOPD8.DB_MAX_OUTPUT_PORT_TYPE
 NOPDF <= NOPDF.DB_MAX_OUTPUT_PORT_TYPE
 zero_flag <= zero_flag.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Microprocessor|comb_logic:comb_logic1
+output_data_out[0] <= output_data_out[0].DB_MAX_OUTPUT_PORT_TYPE
+output_data_out[1] <= output_data_out[1].DB_MAX_OUTPUT_PORT_TYPE
+output_data_out[2] <= output_data_out[2].DB_MAX_OUTPUT_PORT_TYPE
+output_data_out[3] <= output_data_out[3].DB_MAX_OUTPUT_PORT_TYPE
+output_data_out[4] <= output_data_out[4].DB_MAX_OUTPUT_PORT_TYPE
+output_data_out[5] <= output_data_out[5].DB_MAX_OUTPUT_PORT_TYPE
+output_data_out[6] <= output_data_out[6].DB_MAX_OUTPUT_PORT_TYPE
+output_data_out[7] <= output_data_out[7].DB_MAX_OUTPUT_PORT_TYPE
+input_data_in[0] => delay[0][0].DATAIN
+input_data_in[1] => delay[0][1].DATAIN
+input_data_in[2] => delay[0][2].DATAIN
+input_data_in[3] => delay[0][3].DATAIN
+input_data_in[4] => delay[0][4].DATAIN
+input_data_in[5] => delay[0][5].DATAIN
+input_data_in[6] => delay[0][6].DATAIN
+input_data_in[7] => delay[0][7].DATAIN
+
+
+|Microprocessor|comb_logic:comb_logic2
+output_data_out[0] <= output_data_out[0].DB_MAX_OUTPUT_PORT_TYPE
+output_data_out[1] <= output_data_out[1].DB_MAX_OUTPUT_PORT_TYPE
+output_data_out[2] <= output_data_out[2].DB_MAX_OUTPUT_PORT_TYPE
+output_data_out[3] <= output_data_out[3].DB_MAX_OUTPUT_PORT_TYPE
+output_data_out[4] <= output_data_out[4].DB_MAX_OUTPUT_PORT_TYPE
+output_data_out[5] <= output_data_out[5].DB_MAX_OUTPUT_PORT_TYPE
+output_data_out[6] <= output_data_out[6].DB_MAX_OUTPUT_PORT_TYPE
+output_data_out[7] <= output_data_out[7].DB_MAX_OUTPUT_PORT_TYPE
+input_data_in[0] => delay[0][0].DATAIN
+input_data_in[1] => delay[0][1].DATAIN
+input_data_in[2] => delay[0][2].DATAIN
+input_data_in[3] => delay[0][3].DATAIN
+input_data_in[4] => delay[0][4].DATAIN
+input_data_in[5] => delay[0][5].DATAIN
+input_data_in[6] => delay[0][6].DATAIN
+input_data_in[7] => delay[0][7].DATAIN
 
 
 |Microprocessor|program_sequencer:prog_sequencer
@@ -172,25 +226,6 @@ pc[4] <= pc[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 pc[5] <= pc[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 pc[6] <= pc[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 pc[7] <= pc[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Microprocessor|comb_logic:comb_logic1
-output_data_out[0] <= output_data_out[0].DB_MAX_OUTPUT_PORT_TYPE
-output_data_out[1] <= output_data_out[1].DB_MAX_OUTPUT_PORT_TYPE
-output_data_out[2] <= output_data_out[2].DB_MAX_OUTPUT_PORT_TYPE
-output_data_out[3] <= output_data_out[3].DB_MAX_OUTPUT_PORT_TYPE
-output_data_out[4] <= output_data_out[4].DB_MAX_OUTPUT_PORT_TYPE
-output_data_out[5] <= output_data_out[5].DB_MAX_OUTPUT_PORT_TYPE
-output_data_out[6] <= output_data_out[6].DB_MAX_OUTPUT_PORT_TYPE
-output_data_out[7] <= output_data_out[7].DB_MAX_OUTPUT_PORT_TYPE
-input_data_in[0] => delay[0][0].DATAIN
-input_data_in[1] => ~NO_FANOUT~
-input_data_in[2] => ~NO_FANOUT~
-input_data_in[3] => ~NO_FANOUT~
-input_data_in[4] => ~NO_FANOUT~
-input_data_in[5] => ~NO_FANOUT~
-input_data_in[6] => ~NO_FANOUT~
-input_data_in[7] => ~NO_FANOUT~
 
 
 |Microprocessor|program_memory:prog_mem
@@ -343,25 +378,6 @@ q_a[4] <= ram_block1a4.PORTADATAOUT
 q_a[5] <= ram_block1a5.PORTADATAOUT
 q_a[6] <= ram_block1a6.PORTADATAOUT
 q_a[7] <= ram_block1a7.PORTADATAOUT
-
-
-|Microprocessor|comb_logic:comb_logic2
-output_data_out[0] <= output_data_out[0].DB_MAX_OUTPUT_PORT_TYPE
-output_data_out[1] <= output_data_out[1].DB_MAX_OUTPUT_PORT_TYPE
-output_data_out[2] <= output_data_out[2].DB_MAX_OUTPUT_PORT_TYPE
-output_data_out[3] <= output_data_out[3].DB_MAX_OUTPUT_PORT_TYPE
-output_data_out[4] <= output_data_out[4].DB_MAX_OUTPUT_PORT_TYPE
-output_data_out[5] <= output_data_out[5].DB_MAX_OUTPUT_PORT_TYPE
-output_data_out[6] <= output_data_out[6].DB_MAX_OUTPUT_PORT_TYPE
-output_data_out[7] <= output_data_out[7].DB_MAX_OUTPUT_PORT_TYPE
-input_data_in[0] => delay[0][0].DATAIN
-input_data_in[1] => ~NO_FANOUT~
-input_data_in[2] => ~NO_FANOUT~
-input_data_in[3] => ~NO_FANOUT~
-input_data_in[4] => ~NO_FANOUT~
-input_data_in[5] => ~NO_FANOUT~
-input_data_in[6] => ~NO_FANOUT~
-input_data_in[7] => ~NO_FANOUT~
 
 
 |Microprocessor|instruction_decoder:instr_decoder

@@ -5,11 +5,12 @@ module microprocessor_tb;
 	// Inputs
 	reg clk;
 	reg reset;
+	reg flush_pipeline;
 	reg [3:0] i_pins;
 
 	// Outputs
 	wire [3:0] o_reg;
-	wire [7:0] ir,pc;
+	wire [7:0] ir,pc,pm_data_delay;
 
 	// Instantiate the Unit Under Test (UUT)
 	Microprocessor uut (
@@ -18,7 +19,8 @@ module microprocessor_tb;
         .i_pins(i_pins),
         .o_reg(o_reg),
 	.ir(ir),
-	.pc(pc)
+	.pc(pc),
+	.pm_data_delay(pm_data_delay)
 	);
 
     // length of simulation

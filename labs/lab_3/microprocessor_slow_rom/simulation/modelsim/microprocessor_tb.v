@@ -9,7 +9,7 @@ module microprocessor_tb;
 
 	// Outputs
 	wire [3:0] o_reg;
-	wire [7:0] ir,pc;
+	wire [7:0] ir,pc,pm_address_out,pm_address,pm_data,pm_data_out;
 
 	// Instantiate the Unit Under Test (UUT)
 	Microprocessor uut (
@@ -18,7 +18,11 @@ module microprocessor_tb;
         .i_pins(i_pins),
         .o_reg(o_reg),
 	.ir(ir),
-	.pc(pc)
+	.pc(pc),
+	.pm_address_out,
+	.pm_address,
+	.pm_data,
+	.pm_data_out
 	);
 
     // length of simulation

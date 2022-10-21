@@ -11,40 +11,42 @@ output reg [3:0] o_reg,
 						m,
 						i,
 						data_bus,
-output reg [7:0] pm_data_out,pm_address_out,pc,from_PS,from_ID,from_CU,ir,
+output reg [7:0] pm_data_delay,pm_address_out,pc,from_PS,from_ID,from_CU,ir,
 output reg [8:0] register_enables,
 output reg NOPC8,
 output reg NOPCF,
 output reg NOPD8,
 output reg NOPDF,
-output reg zero_flag
+output reg zero_flag,
+output reg flush_pipeline
 );
 
 
-reg sync_reset,flush_pipeline;
+reg sync_reset;
 wire jump,conditional_jump,i_mux_select,y_reg_select,x_reg_select;
 
 wire [3:0] LS_nibble_ir,source_select,dm;
-wire [7:0] pm_address,pm_data,data_pipe,pm_data_delay;
+wire [7:0] pm_data,pm_address;
 
-always @(posedge clk)
-		sync_reset <= reset;
-		
 always @ (posedge clk)
-	data_pipe <= pm_data;
+	data_pipeline = pm_data;
 	
 always @ (*)
 	if (flush_pipeline)
-		pm_data_out = 8'HC8;
+		data_delay <= 8'HC8;
 	else
-		pm_data_out = pm_data_delay;
-	
+		data_delay <= pm_data_out;
+		
 always @ (*)
-	if ( jump || conditional_jump)
-		flush_pipeline = 1;
+	if((jump == 1'b1) || (conditional_jump == 1 && zero_flag == 1'b0))
+		flush_pipeline = 1'b1;
 	else
-		flush_pipeline = 0;
-	
+		flush_pipeline = 1'b0;
+always @(posedge clk)
+		sync_reset <= reset;
+comb_logic comb_logic1(.output_data_out(pm_address_out),.input_data_in(pm_address));
+
+comb_logic comb_logic2(.output_data_out(pm_data_out),.input_data_in(data_pipeline));			
 
 program_sequencer prog_sequencer(.clk(clk),
 											.sync_reset(sync_reset),
@@ -56,23 +58,18 @@ program_sequencer prog_sequencer(.clk(clk),
 											.pc(pc),
 											.from_PS(from_PS));
 											
-comb_logic comb_logic1(
-								.output_data_out(pm_address_out),
-								.input_data_in(pm_address)
-								);								
+					
 											
 program_memory prog_mem(.clock(~clk),
 								.address(pm_address_out),
 								.q(pm_data)
 								);
 								
-comb_logic comb_logic2(.output_data_out(pm_data_delay),
-								.input_data_in(data_pipe)
-								);								
+							
 								
 instruction_decoder instr_decoder(.clk(clk),
 											 .sync_reset(sync_reset),
-											 .pm_data(pm_data_out),
+											 .pm_data(data_delay),
 											 .jump(jump),
 											 .conditional_jump(conditional_jump),
 											 .LS_nibble_of_ir(LS_nibble_ir),
