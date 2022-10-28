@@ -9,7 +9,7 @@ module microprocessor_tb;
 
 	// Outputs
 	wire [3:0] o_reg;
-	wire [7:0] ir,pc,pm_address_out,pm_data_out,data_pipe;
+	wire [7:0] ir,pc,pm_address_out,pm_data_out,data_delay;
 
 	// Instantiate the Unit Under Test (UUT)
 	Microprocessor uut (
@@ -21,7 +21,7 @@ module microprocessor_tb;
 	.pc(pc),
 	.pm_address_out(pm_address_out),
 	.pm_data_out(pm_data_out),
-	.data_pipe(data_pipe)
+	.data_delay(data_delay)
 
 	
 	);

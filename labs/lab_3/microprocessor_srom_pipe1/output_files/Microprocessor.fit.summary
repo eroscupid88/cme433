@@ -1,12 +1,12 @@
-Fitter Status : Successful - Fri Oct 21 08:29:26 2022
+Fitter Status : Successful - Fri Oct 21 18:57:54 2022
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Standard Edition
 Revision Name : Microprocessor
 Top-level Entity Name : Microprocessor
 Family : Cyclone IV E
 Device : EP4CE115F29C7
 Timing Models : Final
-Total logic elements : 1,189 / 114,480 ( 1 % )
-    Total combinational functions : 1,176 / 114,480 ( 1 % )
+Total logic elements : 1,202 / 114,480 ( 1 % )
+    Total combinational functions : 1,184 / 114,480 ( 1 % )
     Dedicated logic registers : 50 / 114,480 ( < 1 % )
 Total registers : 50
 Total pins : 120 / 529 ( 23 % )

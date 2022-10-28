@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Microprocessor
-Fri Oct 21 08:29:14 2022
+Fri Oct 21 18:57:41 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Standard Edition
 
 
@@ -56,13 +56,13 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Oct 21 08:29:14 2022           ;
+; Analysis & Synthesis Status        ; Successful - Fri Oct 21 18:57:41 2022           ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Standard Edition ;
 ; Revision Name                      ; Microprocessor                                  ;
 ; Top-level Entity Name              ; Microprocessor                                  ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 1,205                                           ;
-;     Total combinational functions  ; 1,176                                           ;
+; Total logic elements               ; 1,213                                           ;
+;     Total combinational functions  ; 1,184                                           ;
 ;     Dedicated logic registers      ; 58                                              ;
 ; Total registers                    ; 58                                              ;
 ; Total pins                         ; 120                                             ;
@@ -172,7 +172,8 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-8         ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-8         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -214,16 +215,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 1,205     ;
+; Estimated Total logic elements              ; 1,213     ;
 ;                                             ;           ;
-; Total combinational functions               ; 1176      ;
+; Total combinational functions               ; 1184      ;
 ; Logic element usage by number of LUT inputs ;           ;
 ;     -- 4 input functions                    ; 106       ;
 ;     -- 3 input functions                    ; 38        ;
-;     -- <=2 input functions                  ; 1032      ;
+;     -- <=2 input functions                  ; 1040      ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 1148      ;
+;     -- normal mode                          ; 1156      ;
 ;     -- arithmetic mode                      ; 28        ;
 ;                                             ;           ;
 ; Total registers                             ; 58        ;
@@ -237,7 +238,7 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 70        ;
-; Total fan-out                               ; 2068      ;
+; Total fan-out                               ; 2084      ;
 ; Average fan-out                             ; 1.39      ;
 +---------------------------------------------+-----------+
 
@@ -247,7 +248,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                    ; Entity Name         ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |Microprocessor                           ; 1176 (0)            ; 58 (9)                    ; 2112        ; 0            ; 0       ; 0         ; 120  ; 0            ; |Microprocessor                                                                                        ; Microprocessor      ; work         ;
+; |Microprocessor                           ; 1184 (9)            ; 58 (9)                    ; 2112        ; 0            ; 0       ; 0         ; 120  ; 0            ; |Microprocessor                                                                                        ; Microprocessor      ; work         ;
 ;    |comb_logic:comb_logic1|               ; 504 (504)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Microprocessor|comb_logic:comb_logic1                                                                 ; comb_logic          ; work         ;
 ;    |comb_logic:comb_logic2|               ; 504 (504)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Microprocessor|comb_logic:comb_logic2                                                                 ; comb_logic          ; work         ;
 ;    |computational_unit:comp_unit|         ; 116 (85)            ; 33 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Microprocessor|computational_unit:comp_unit                                                           ; computational_unit  ; work         ;
@@ -260,7 +261,7 @@ https://fpgasoftware.intel.com/eula.
 ;    |program_memory:prog_mem|              ; 0 (0)               ; 0 (0)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |Microprocessor|program_memory:prog_mem                                                                ; program_memory      ; work         ;
 ;       |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |Microprocessor|program_memory:prog_mem|altsyncram:altsyncram_component                                ; altsyncram          ; work         ;
 ;          |altsyncram_b9a1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |Microprocessor|program_memory:prog_mem|altsyncram:altsyncram_component|altsyncram_b9a1:auto_generated ; altsyncram_b9a1     ; work         ;
-;    |program_sequencer:prog_sequencer|     ; 10 (10)             ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Microprocessor|program_sequencer:prog_sequencer                                                       ; program_sequencer   ; work         ;
+;    |program_sequencer:prog_sequencer|     ; 9 (9)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Microprocessor|program_sequencer:prog_sequencer                                                       ; program_sequencer   ; work         ;
 +-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -306,9 +307,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                               ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------+
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |Microprocessor|instruction_decoder:instr_decoder|source_register_select ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Microprocessor|program_sequencer:prog_sequencer|pm_address[7]           ;
-; 16:1               ; 4 bits    ; 40 LEs        ; 28 LEs               ; 12 LEs                 ; No         ; |Microprocessor|computational_unit:comp_unit|Mux3                        ;
-; 17:1               ; 3 bits    ; 33 LEs        ; 18 LEs               ; 15 LEs                 ; No         ; |Microprocessor|computational_unit:comp_unit|alu_out[1]                  ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Microprocessor|program_sequencer:prog_sequencer|pm_address[5]           ;
+; 16:1               ; 4 bits    ; 40 LEs        ; 28 LEs               ; 12 LEs                 ; No         ; |Microprocessor|computational_unit:comp_unit|Mux1                        ;
+; 17:1               ; 3 bits    ; 33 LEs        ; 18 LEs               ; 15 LEs                 ; No         ; |Microprocessor|computational_unit:comp_unit|alu_out[2]                  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------+
 
 
@@ -2589,20 +2590,20 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA               ; 29                          ;
 ;     ENA SLD           ; 4                           ;
 ;     plain             ; 25                          ;
-; cycloneiii_lcell_comb ; 1177                        ;
+; cycloneiii_lcell_comb ; 1185                        ;
 ;     arith             ; 28                          ;
 ;         2 data inputs ; 9                           ;
 ;         3 data inputs ; 19                          ;
-;     normal            ; 1149                        ;
+;     normal            ; 1157                        ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 1001                        ;
-;         2 data inputs ; 22                          ;
+;         2 data inputs ; 30                          ;
 ;         3 data inputs ; 19                          ;
 ;         4 data inputs ; 106                         ;
 ; cycloneiii_ram_block  ; 12                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 65.00                       ;
-; Average LUT depth     ; 53.75                       ;
+; Average LUT depth     ; 54.21                       ;
 +-----------------------+-----------------------------+
 
 
@@ -2621,7 +2622,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Standard Edition
-    Info: Processing started: Fri Oct 21 08:29:08 2022
+    Info: Processing started: Fri Oct 21 18:57:35 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Microprocessor -c Microprocessor
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
@@ -2640,9 +2641,9 @@ Info (12021): Found 1 design units, including 1 entities, in source file program
 Info (12021): Found 1 design units, including 1 entities, in source file comb_logic.sv
     Info (12023): Found entity 1: comb_logic File: /home/dtv782/engr-ece/CME 433/labs/lab_3/microprocessor_srom_pipe1/comb_logic.sv Line: 1
 Info (12127): Elaborating entity "Microprocessor" for the top level hierarchy
-Info (12128): Elaborating entity "comb_logic" for hierarchy "comb_logic:comb_logic1" File: /home/dtv782/engr-ece/CME 433/labs/lab_3/microprocessor_srom_pipe1/Microprocessor.sv Line: 36
-Info (12128): Elaborating entity "program_sequencer" for hierarchy "program_sequencer:prog_sequencer" File: /home/dtv782/engr-ece/CME 433/labs/lab_3/microprocessor_srom_pipe1/Microprocessor.sv Line: 47
-Info (12128): Elaborating entity "program_memory" for hierarchy "program_memory:prog_mem" File: /home/dtv782/engr-ece/CME 433/labs/lab_3/microprocessor_srom_pipe1/Microprocessor.sv Line: 54
+Info (12128): Elaborating entity "comb_logic" for hierarchy "comb_logic:comb_logic1" File: /home/dtv782/engr-ece/CME 433/labs/lab_3/microprocessor_srom_pipe1/Microprocessor.sv Line: 49
+Info (12128): Elaborating entity "program_sequencer" for hierarchy "program_sequencer:prog_sequencer" File: /home/dtv782/engr-ece/CME 433/labs/lab_3/microprocessor_srom_pipe1/Microprocessor.sv Line: 60
+Info (12128): Elaborating entity "program_memory" for hierarchy "program_memory:prog_mem" File: /home/dtv782/engr-ece/CME 433/labs/lab_3/microprocessor_srom_pipe1/Microprocessor.sv Line: 67
 Info (12128): Elaborating entity "altsyncram" for hierarchy "program_memory:prog_mem|altsyncram:altsyncram_component" File: /home/dtv782/engr-ece/CME 433/labs/lab_3/microprocessor_srom_pipe1/program_memory.v Line: 82
 Info (12130): Elaborated megafunction instantiation "program_memory:prog_mem|altsyncram:altsyncram_component" File: /home/dtv782/engr-ece/CME 433/labs/lab_3/microprocessor_srom_pipe1/program_memory.v Line: 82
 Info (12133): Instantiated megafunction "program_memory:prog_mem|altsyncram:altsyncram_component" with the following parameter: File: /home/dtv782/engr-ece/CME 433/labs/lab_3/microprocessor_srom_pipe1/program_memory.v Line: 82
@@ -2663,9 +2664,9 @@ Info (12133): Instantiated megafunction "program_memory:prog_mem|altsyncram:alts
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_b9a1.tdf
     Info (12023): Found entity 1: altsyncram_b9a1 File: /home/dtv782/engr-ece/CME 433/labs/lab_3/microprocessor_srom_pipe1/db/altsyncram_b9a1.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_b9a1" for hierarchy "program_memory:prog_mem|altsyncram:altsyncram_component|altsyncram_b9a1:auto_generated" File: /opt/intelFPGA/20.1.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "instruction_decoder" for hierarchy "instruction_decoder:instr_decoder" File: /home/dtv782/engr-ece/CME 433/labs/lab_3/microprocessor_srom_pipe1/Microprocessor.sv Line: 74
-Info (12128): Elaborating entity "computational_unit" for hierarchy "computational_unit:comp_unit" File: /home/dtv782/engr-ece/CME 433/labs/lab_3/microprocessor_srom_pipe1/Microprocessor.sv Line: 101
-Info (12128): Elaborating entity "data_memory" for hierarchy "data_memory:data_mem" File: /home/dtv782/engr-ece/CME 433/labs/lab_3/microprocessor_srom_pipe1/Microprocessor.sv Line: 108
+Info (12128): Elaborating entity "instruction_decoder" for hierarchy "instruction_decoder:instr_decoder" File: /home/dtv782/engr-ece/CME 433/labs/lab_3/microprocessor_srom_pipe1/Microprocessor.sv Line: 87
+Info (12128): Elaborating entity "computational_unit" for hierarchy "computational_unit:comp_unit" File: /home/dtv782/engr-ece/CME 433/labs/lab_3/microprocessor_srom_pipe1/Microprocessor.sv Line: 114
+Info (12128): Elaborating entity "data_memory" for hierarchy "data_memory:data_mem" File: /home/dtv782/engr-ece/CME 433/labs/lab_3/microprocessor_srom_pipe1/Microprocessor.sv Line: 121
 Info (12128): Elaborating entity "altsyncram" for hierarchy "data_memory:data_mem|altsyncram:altsyncram_component" File: /home/dtv782/engr-ece/CME 433/labs/lab_3/microprocessor_srom_pipe1/data_memory.v Line: 86
 Info (12130): Elaborated megafunction instantiation "data_memory:data_mem|altsyncram:altsyncram_component" File: /home/dtv782/engr-ece/CME 433/labs/lab_3/microprocessor_srom_pipe1/data_memory.v Line: 86
 Info (12133): Instantiated megafunction "data_memory:data_mem|altsyncram:altsyncram_component" with the following parameter: File: /home/dtv782/engr-ece/CME 433/labs/lab_3/microprocessor_srom_pipe1/data_memory.v Line: 86
@@ -3723,15 +3724,15 @@ Info (17016): Found the following redundant logic cells in design
     Info (17048): Logic cell "comb_logic:comb_logic2|delay[0][7]" File: /home/dtv782/engr-ece/CME 433/labs/lab_3/microprocessor_srom_pipe1/comb_logic.sv Line: 5
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1361 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1369 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
     Info (21059): Implemented 114 output pins
-    Info (21061): Implemented 1229 logic cells
+    Info (21061): Implemented 1237 logic cells
     Info (21064): Implemented 12 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 30 warnings
-    Info: Peak virtual memory: 731 megabytes
-    Info: Processing ended: Fri Oct 21 08:29:14 2022
+    Info: Peak virtual memory: 766 megabytes
+    Info: Processing ended: Fri Oct 21 18:57:41 2022
     Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:15
+    Info: Total CPU time (on all processors): 00:00:16
 
 

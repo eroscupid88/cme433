@@ -11,7 +11,7 @@ output reg [3:0] o_reg,
 						m,
 						i,
 						data_bus,
-output reg [7:0] pm_data_out,data_pipe,pm_address_out,pc,from_PS,from_ID,from_CU,ir,
+output reg [7:0] pm_data_out,data_delay,pm_address_out,pc,from_PS,from_ID,from_CU,ir,
 output reg [8:0] register_enables,
 output reg NOPC8,
 output reg NOPCF,
@@ -21,18 +21,31 @@ output reg zero_flag
 );
 
 
-reg sync_reset;
+reg sync_reset,flush_pipeline;
 wire jump,conditional_jump,i_mux_select,y_reg_select,x_reg_select;
 
 wire [3:0] LS_nibble_ir,source_select,dm;
-wire [7:0] pm_data,pm_address;
+wire [7:0] pm_data,pm_address,data_pipe;
 
 always @(posedge clk)
 	data_pipe <= pm_data;
+	
+always @ (*)
+	if (flush_pipeline)
+		data_delay <= 8'HC8;
+	else
+		data_delay <= pm_data_out;
+		
+always @ (*)
+	if((jump == 1'b1) || (conditional_jump == 1 && zero_flag == 1'b0))
+		flush_pipeline = 1'b1;
+	else
+		flush_pipeline = 1'b0;
 
 
 always @(posedge clk)
 		sync_reset <= reset;
+		
 comb_logic comb_logic1(.output_data_out(pm_address_out),.input_data_in(pm_address));
 comb_logic comb_logic2(.output_data_out(pm_data_out),.input_data_in(data_pipe));			
 
@@ -57,7 +70,7 @@ program_memory prog_mem(.clock(~clk),
 								
 instruction_decoder instr_decoder(.clk(clk),
 											 .sync_reset(sync_reset),
-											 .pm_data(pm_data_out),
+											 .pm_data(data_delay),
 											 .jump(jump),
 											 .conditional_jump(conditional_jump),
 											 .LS_nibble_of_ir(LS_nibble_ir),

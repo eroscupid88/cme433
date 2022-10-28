@@ -10,23 +10,23 @@ z2
 cModel Technology
 d/home/dtv782/engr-ece
 vhard_block
-Z0 !s110 1666324026
+Z0 !s110 1666406678
 !i10b 1
 !s100 QfZ_5b4e21[oEjKkU6[Ch0
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
 I[k0n]VBK8gjl1]3=7j^052
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 Z3 d/home/dtv782/engr-ece/CME 433/labs/lab_3/microprocessor_slow_rom/simulation/modelsim
-Z4 w1666323877
+Z4 w1666398872
 Z5 8/home/dtv782/engr-ece/CME 433/labs/lab_3/microprocessor_slow_rom/simulation/modelsim/Microprocessor.vo
 Z6 F/home/dtv782/engr-ece/CME 433/labs/lab_3/microprocessor_slow_rom/simulation/modelsim/Microprocessor.vo
-!i122 28
+!i122 40
 L0 24903 34
 Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1666324026.000000
+Z8 !s108 1666406678.000000
 Z9 !s107 /home/dtv782/engr-ece/CME 433/labs/lab_3/microprocessor_slow_rom/simulation/modelsim/Microprocessor.vo|
 Z10 !s90 -reportprogress|300|-work|work|-stats=none|/home/dtv782/engr-ece/CME 433/labs/lab_3/microprocessor_slow_rom/simulation/modelsim/Microprocessor.vo|
 !i113 1
@@ -43,7 +43,7 @@ R3
 R4
 R5
 R6
-!i122 28
+!i122 40
 L0 32 24870
 R7
 r1
@@ -59,16 +59,16 @@ n@microprocessor
 vmicroprocessor_tb
 R0
 !i10b 1
-!s100 knC]bngV@`K1RifhAVKo=3
+!s100 C@^ATKab=:Ga]aVGDTRD61
 R1
-IijbBZI4Bc6AH3jNNkEY>12
+Ii`kYW0j2gHELQ1gzFC@V@0
 R2
 R3
-w1666323889
+w1666398891
 8/home/dtv782/engr-ece/CME 433/labs/lab_3/microprocessor_slow_rom/simulation/modelsim/microprocessor_tb.v
 F/home/dtv782/engr-ece/CME 433/labs/lab_3/microprocessor_slow_rom/simulation/modelsim/microprocessor_tb.v
-!i122 29
-L0 3 54
+!i122 41
+L0 3 51
 R7
 r1
 !s85 0
