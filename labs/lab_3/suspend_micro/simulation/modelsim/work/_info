@@ -1,0 +1,81 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/dtv782/engr-ece
+vhard_block
+Z0 !s110 1666412516
+!i10b 1
+!s100 YNBFca85zeNaQ_2MbAeRP1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I^RD[<P?[1;bD7kXU_S4h<0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 d/home/dtv782/engr-ece/CME 433/labs/lab_3/suspend_micro/simulation/modelsim
+Z4 w1666411824
+Z5 8/home/dtv782/engr-ece/CME 433/labs/lab_3/suspend_micro/simulation/modelsim/Microprocessor.vo
+Z6 F/home/dtv782/engr-ece/CME 433/labs/lab_3/suspend_micro/simulation/modelsim/Microprocessor.vo
+!i122 64
+L0 7277 34
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1666412516.000000
+Z9 !s107 /home/dtv782/engr-ece/CME 433/labs/lab_3/suspend_micro/simulation/modelsim/Microprocessor.vo|
+Z10 !s90 -reportprogress|300|-work|work|-stats=none|/home/dtv782/engr-ece/CME 433/labs/lab_3/suspend_micro/simulation/modelsim/Microprocessor.vo|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+vMicroprocessor
+R0
+!i10b 1
+!s100 Ldfb1STPeN4:aZ7cLR7n`3
+R1
+IS_^DoQ7Z;4n[=3kUMaaV83
+R2
+R3
+R4
+R5
+R6
+!i122 64
+L0 32 7244
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+n@microprocessor
+vmicroprocessor_tb
+R0
+!i10b 1
+!s100 XjhFaE32h3W6I9NkBzLgG2
+R1
+IV:D6J<0nKjY0<;Gd;oda11
+R2
+R3
+w1666412409
+8/home/dtv782/engr-ece/CME 433/labs/lab_3/suspend_micro/simulation/modelsim/microprocessor_tb.v
+F/home/dtv782/engr-ece/CME 433/labs/lab_3/suspend_micro/simulation/modelsim/microprocessor_tb.v
+!i122 65
+L0 3 57
+R7
+r1
+!s85 0
+31
+R8
+!s107 /home/dtv782/engr-ece/CME 433/labs/lab_3/suspend_micro/simulation/modelsim/microprocessor_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/dtv782/engr-ece/CME 433/labs/lab_3/suspend_micro/simulation/modelsim/microprocessor_tb.v|
+!i113 1
+R11
+R12

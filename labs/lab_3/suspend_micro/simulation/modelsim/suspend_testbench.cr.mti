@@ -1,0 +1,9 @@
+{/home/dtv782/engr-ece/CME 433/labs/lab_3/suspend_micro/simulation/modelsim/Microprocessor.vo} {1 {vlog -work work -stats=none {/home/dtv782/engr-ece/CME 433/labs/lab_3/suspend_micro/simulation/modelsim/Microprocessor.vo}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Microprocessor
+-- Compiling module hard_block
+
+Top level modules:
+	Microprocessor
+
+} {} {}}
