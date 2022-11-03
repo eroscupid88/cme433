@@ -1,0 +1,255 @@
+module instruction_decoder(
+input clk, sync_reset,
+input [7:0] pm_data,
+output reg jump,conditional_jump,i_mux_select,y_mux_select,x_mux_select,
+output reg [3:0] LS_nibble_of_ir,source_register_select,
+output reg [8:0] register_enables,
+output reg [7:0] ir,
+output reg [7:0] from_ID,
+output reg NOPC8,NOPCF, NOPD8, NOPDF
+);
+
+
+assign from_ID = 8'H00;
+
+
+always @ *
+	if (ir == 8'HC8)
+		NOPC8 = 1'b1;
+	else 
+		NOPC8 = 1'b0;
+		
+always @ *
+	if (ir == 8'HCF)
+		NOPCF = 1'b1;
+	else 
+		NOPCF = 1'b0;
+
+always @ *
+	if (ir == 8'HD8)
+		NOPD8 = 1'b1;
+	else 
+		NOPD8 = 1'b0;
+
+always @ *
+	if (ir == 8'HDF)
+		NOPDF = 1'b1;
+	else 
+		NOPDF = 1'b0;
+	
+//instruction register
+always @ (posedge clk)
+	ir <= pm_data;
+
+
+always @ *
+LS_nibble_of_ir <= ir[3:0];
+
+
+// i_sel
+
+always @ *
+	if(sync_reset == 1'b1)
+		i_mux_select <= 1'b0;
+	else if (ir[7:4]== 4'b0110)
+		i_mux_select <= 1'b0;
+	else if ((ir[7:3] == 5'b10110))
+		i_mux_select <= 1'b0;
+	else 
+		i_mux_select <= 1'b1;
+
+// x_sel
+always @ *
+	if(sync_reset == 1'b1)
+		x_mux_select <= 1'b0;
+	else		
+		x_mux_select <=ir[4];
+	
+// y_sel
+always @ *
+	if(sync_reset == 1'b1)
+		y_mux_select <= 1'b0;
+	else		
+		y_mux_select <=ir[3];
+
+// jmp 		
+always @ *
+	if(sync_reset == 1'b1)
+		jump <= 1'b0;
+	else if(ir[7:4] == 4'HE)
+		jump <= 1'b1;
+	else
+		jump <= 1'b0;
+
+//conditional_jump	
+always @ *
+	if(sync_reset == 1'b1)
+		conditional_jump <= 1'b0;
+	else if(ir[7:4] == 4'HF)
+		conditional_jump <= 1'b1;
+	else
+		conditional_jump <= 1'b0;
+
+		
+//another reg_en
+always @ *
+if(sync_reset==1'b1)
+	register_enables[5]	<= 1'b1;
+else if (ir[7:4]==4'b0101)
+	register_enables[5]	<= 1'b1;
+else if (ir[7:3]==5'b10101)
+	register_enables[5]	<= 1'b1;
+else
+	register_enables[5]	<= 1'b0;
+	
+	
+// o_reg register
+always @ *
+if(sync_reset==1'b1)
+	register_enables[8]	<= 1'b1;
+else if (ir[7:4]==4'b0100)
+	register_enables[8]	<= 1'b1;
+else if (ir[7:3]==5'b10100)
+	register_enables[8]	<= 1'b1;
+else if ((ir[7:3]==5'b10100)&&(ir[2:0]==3'b100))
+	register_enables[8]	<= 1'b1;
+else
+	register_enables[8]	<= 1'b0;
+	
+	
+	
+	
+// x0 register
+always @ *
+if(sync_reset==1'b1)
+	register_enables[0]	<= 1'b1;
+else if (ir[7:4]==4'b0000)
+	register_enables[0]	<= 1'b1;
+else if (ir[7:3]==5'b10000)
+	register_enables[0]	<= 1'b1;
+else
+	register_enables[0]	<= 1'b0;
+	
+// x1 register
+always @ *
+if(sync_reset==1'b1)
+	register_enables[1]	<= 1'b1;
+else if (ir[7:4]==4'b0001)
+	register_enables[1]	<= 1'b1;
+else if (ir[7:3]==5'b10001)
+	register_enables[1]	<= 1'b1;
+else
+	register_enables[1]	<= 1'b0;
+	
+// y0 register
+always @ *
+if(sync_reset==1'b1)
+	register_enables[2]	<= 1'b1;
+else if (ir[7:4]==4'b0010)
+	register_enables[2]	<= 1'b1;
+else if (ir[7:3]==5'b10010)
+	register_enables[2]	<= 1'b1;
+else
+	register_enables[2]	<= 1'b0;
+	
+// y1 register
+always @ *
+if(sync_reset==1'b1)
+	register_enables[3]	<= 1'b1;
+else if (ir[7:4]==4'b0011)
+	register_enables[3]	<= 1'b1;
+else if (ir[7:3]==5'b10011)
+	register_enables[3]	<= 1'b1;
+else
+	register_enables[3]	<= 1'b0;
+
+//register_enables[7]
+always @ *
+if (sync_reset==1'b1)
+	register_enables[7]	<= 1'b1;
+else if (ir[7:3]==5'b10111)
+	register_enables[7]	<= 1'b1;
+else if (ir[7:4]==4'b0111)
+	register_enables[7]	<= 1'b1;
+else
+	register_enables[7]	<= 1'b0;
+
+
+		
+//register_enables[4]
+		
+always @ *
+	if (sync_reset == 1'b1)
+		register_enables[4] <= 1'b1;
+	else if(ir[7:5]==3'b110)
+		register_enables[4] <= 1'b1;
+	else
+		register_enables[4] <= 1'b0;
+		
+				
+//always @ *
+//register_enables[6]
+always @ *
+	if(sync_reset == 1'b1)
+		register_enables[6] <=1'b1;
+	else if (ir[7:3] == 5'b10110)  // mov ??? to i
+		register_enables[6] <= 1'b1;
+	else if (ir[7:3] == 5'b10111)				// move ??? dm
+		register_enables[6] <= 1'b1;
+	else if (ir[7:4] == 4'b0110)   // load data to i
+		register_enables[6] <= 1'b1;
+	else if (ir[7:4] == 4'b0111)    // load dm
+		register_enables[6] <= 1'b1;
+	else if ((ir[7:6] ==2'b10) && (ir[2:0] == 3'b111)) // move instr source is dm
+		register_enables[6] <= 1'b1;
+	else
+		register_enables[6] <= 1'b0;
+				
+
+always @ *
+if(sync_reset==1'b1)
+	source_register_select	<= 4'd10;
+else if (ir[7]==1'b0)
+	source_register_select	<= 4'd8;
+else if ((ir[7:6]==2'b10)&&(ir[5:3]==ir[2:0])&&(ir[2:0]!=3'd4))
+	source_register_select	<= 4'd9;
+else if ((ir[7:6]==2'b10)&&(ir[5:3]==ir[2:0])&&(ir[2:0]==3'd4))
+	source_register_select	<= 4'd4;
+else if ((ir[7:6]==2'b10)&&(ir[2:0]==3'd0))	// x0
+	source_register_select	<= 4'd0;
+else if ((ir[7:6]==2'b10)&&(ir[2:0]==3'd1))	// x1
+	source_register_select	<= 4'd1;
+else if ((ir[7:6]==2'b10)&&(ir[2:0]==3'd2))	// y0
+	source_register_select	<= 4'd2;
+else if ((ir[7:6]==2'b10)&&(ir[2:0]==3'd3))	// y1
+	source_register_select	<= 4'd3;
+else if ((ir[7:6]==2'b10)&&(ir[2:0]==3'd4))	// r
+	source_register_select	<= 4'd4;
+else if ((ir[7:6]==2'b10)&&(ir[2:0]==3'd5))	// m
+	source_register_select	<= 4'd5;
+else if ((ir[7:6]==2'b10)&&(ir[2:0]==3'd6))	// i
+	source_register_select	<= 4'd6;
+else if ((ir[7:6]==2'b10)&&(ir[2:0]==3'd7))	// dm
+	source_register_select	<= 4'd7;// dm
+else 
+	source_register_select	<= 2'd0;
+
+			
+endmodule
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
