@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri Nov 18 18:54:07 2022
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Standard Edition
+Revision Name : Microprocessor
+Top-level Entity Name : Microprocessor
+Family : Cyclone IV E
+Total logic elements : 316
+    Total combinational functions : 294
+    Dedicated logic registers : 55
+Total registers : 55
+Total pins : 214
+Total virtual pins : 0
+Total memory bits : 2,368
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
