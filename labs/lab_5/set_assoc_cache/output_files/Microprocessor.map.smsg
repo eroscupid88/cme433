@@ -1,0 +1,3 @@
+Warning (10268): Verilog HDL information at program_sequencer.sv(34): always construct contains both blocking and non-blocking assignments File: /home/dtv782/engr-ece/CME 433/labs/lab_5/set_assoc_cache/program_sequencer.sv Line: 34
+Warning (10268): Verilog HDL information at program_sequencer.sv(52): always construct contains both blocking and non-blocking assignments File: /home/dtv782/engr-ece/CME 433/labs/lab_5/set_assoc_cache/program_sequencer.sv Line: 52
+Warning (10268): Verilog HDL information at program_sequencer.sv(138): always construct contains both blocking and non-blocking assignments File: /home/dtv782/engr-ece/CME 433/labs/lab_5/set_assoc_cache/program_sequencer.sv Line: 138
