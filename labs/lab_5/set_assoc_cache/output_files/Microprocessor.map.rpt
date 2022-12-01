@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Microprocessor
-Wed Nov 23 15:41:57 2022
+Fri Nov 25 16:26:24 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Standard Edition
 
 
@@ -62,7 +62,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Nov 23 15:41:57 2022           ;
+; Analysis & Synthesis Status        ; Successful - Fri Nov 25 16:26:23 2022           ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Standard Edition ;
 ; Revision Name                      ; Microprocessor                                  ;
 ; Top-level Entity Name              ; Microprocessor                                  ;
@@ -178,7 +178,8 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-8         ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-8         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -812,14 +813,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Standard Edition
-    Info: Processing started: Wed Nov 23 15:41:50 2022
+    Info: Processing started: Fri Nov 25 16:26:17 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Microprocessor -c Microprocessor
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file cache_set_assoc.v
     Info (12023): Found entity 1: cache_set_assoc File: /home/dtv782/engr-ece/CME 433/labs/lab_5/set_assoc_cache/cache_set_assoc.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file cache_multi.v
-    Info (12023): Found entity 1: cache_multi File: /home/dtv782/engr-ece/CME 433/labs/lab_5/set_assoc_cache/cache_multi.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file data_memory.v
     Info (12023): Found entity 1: data_memory File: /home/dtv782/engr-ece/CME 433/labs/lab_5/set_assoc_cache/data_memory.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file program_sequencer.sv
@@ -972,8 +971,8 @@ Info (21057): Implemented 686 device resources after synthesis - the final resou
     Info (21061): Implemented 397 logic cells
     Info (21064): Implemented 140 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 34 warnings
-    Info: Peak virtual memory: 733 megabytes
-    Info: Processing ended: Wed Nov 23 15:41:57 2022
+    Info: Peak virtual memory: 764 megabytes
+    Info: Processing ended: Fri Nov 25 16:26:24 2022
     Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:16
 

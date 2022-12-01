@@ -131,8 +131,8 @@ always @ *
 		pm_address <= {jump_addr,4'h0};
 	else if ((conditional_jump == 1'b1) && (dont_jump_flag ==1'b0))
 		pm_address <= {jump_addr,4'h0};
-//	else if (hold == 1'b1)
-//		pm_address <= pc;
+	else if (hold == 1'b1)
+		pm_address <= pc;
 	else if (((jump == 1'b0) && (conditional_jump == 1'b0)) || (dont_jump_flag ==1'b1))
 		pm_address <= pc + 8'h01;
 	else
